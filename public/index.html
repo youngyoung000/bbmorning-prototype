@@ -22402,6 +22402,39 @@ input, textarea, button { font-family: inherit; }
     { id: 405, date: "4/24", day: "\uBAA9", title: "\uD765\uD765\uC81C\uACFC \uB538\uAE30 \uCF00\uC774\uD06C \uCD9C\uC2DC", place: "\uCDA9\uBD81 \uCCAD\uC8FC \uBCF8\uC810", tag: "\uC2E0\uBA54\uB274", tagColor: "#F59E0B", img: "\u{1F382}", remain: "D-12" },
     { id: 406, date: "4/27", day: "\uC77C", title: "\uBE75\uB355\uD6C4 \uB300\uD68C", place: "\uC11C\uC6B8 \uC131\uC218\uB3D9", tag: "\uB300\uD68C", tagColor: "#3B82F6", img: "\u{1F3C6}", remain: "D-15" }
   ];
+  var BINGO_BAKERIES = [
+    { pos: 0, name: "\uBC00\uB3C4", emoji: "\u{1F35E}", area: "\uC11C\uC6B8 \uC885\uB85C" },
+    { pos: 1, name: "\uB7F0\uB358\uBCA0\uC774\uAE00\uBBA4\uC9C0\uC5C4", emoji: "\u{1F96F}", area: "\uC11C\uC6B8 \uC548\uAD6D" },
+    { pos: 2, name: "\uD14C\uB514\uBD48\uC774\uB85C", emoji: "\u{1F9F8}", area: "\uC11C\uC6B8 \uC131\uC218" },
+    { pos: 3, name: "\uC62C\uB4DC\uD398\uB9AC\uB3C4\uB11B", emoji: "\u{1F369}", area: "\uC11C\uC6B8 \uC5F0\uB0A8" },
+    { pos: 4, name: "\uC559\uBC84\uD130\uC0B4\uB871", emoji: "\u{1F9C8}", area: "\uC11C\uC6B8 \uB9C8\uD3EC" },
+    { pos: 5, name: "\uBE0C\uB808\uB4DC05", emoji: "\u{1F956}", area: "\uC11C\uC6B8 \uC6A9\uC0B0" },
+    { pos: 6, name: "\uC18C\uAE08\uBE75\uC5F0\uAD6C\uC18C", emoji: "\u{1F9C2}", area: "\uC11C\uC6B8 \uAC15\uB0A8" },
+    { pos: 7, name: "\uCE74\uD398\uB808\uC774\uC5B4\uB4DC", emoji: "\u2615", area: "\uC11C\uC6B8 \uC131\uC218" },
+    { pos: 8, name: "\uACE0\uBBF8\uB514\uC800\uD2B8", emoji: "\u{1F370}", area: "\uC11C\uC6B8 \uD569\uC815" },
+    { pos: 9, name: "\uC624\uD504\uB354\uC6D4", emoji: "\u{1F9C1}", area: "\uAC15\uC6D0 \uAC15\uB989" },
+    { pos: 10, name: "\uACF3\uAC04", emoji: "\u{1F33E}", area: "\uC11C\uC6B8 \uC885\uB85C" },
+    { pos: 11, name: "\uD765\uD765\uC81C\uACFC", emoji: "\u{1F382}", area: "\uCDA9\uBD81 \uCCAD\uC8FC" },
+    { pos: 12, name: "\uB098\uD3F4\uB808\uC639\uACFC\uC790\uC810", emoji: "\u{1F950}", area: "\uC11C\uC6B8 \uC911\uAD6C" },
+    { pos: 13, name: "\uD558\uD2B8\uD2F0\uB77C\uBBF8\uC218", emoji: "\u{1F49B}", area: "\uC11C\uC6B8 \uC774\uD0DC\uC6D0" },
+    { pos: 14, name: "\uAC74\uAC15\uD55C\uBE75\uC9D1", emoji: "\u{1F33F}", area: "\uC11C\uC6B8 \uC11C\uCD08" },
+    { pos: 15, name: "\uC545\uD1A0\uBC84\uBCA0\uC774\uCEE4\uB9AC", emoji: "\u{1F383}", area: "\uC11C\uC6B8 \uD55C\uB0A8" },
+    { pos: 16, name: "\uBE44\uAC74\uBE75\uC9D1 \uD50C\uB79C\uC787", emoji: "\u{1F331}", area: "\uC11C\uC6B8 \uC5F0\uB0A8" },
+    { pos: 17, name: "\uB69C\uB808\uC96C\uB974", emoji: "\u{1F3EA}", area: "\uC804\uAD6D" },
+    { pos: 18, name: "\uACE0\uC9D1\uBCA0\uC774\uCEE4\uB9AC", emoji: "\u{1F4AA}", area: "\uC11C\uC6B8 \uB3D9\uB300\uBB38" },
+    { pos: 19, name: "\uCE74\uD398\uD3EC\uBAA8", emoji: "\u{1F345}", area: "\uC11C\uC6B8 \uB9DD\uC6D0" },
+    { pos: 20, name: "\uBE75\uACF5\uBC29 \uD558\uB8E8", emoji: "\u{1F305}", area: "\uACBD\uAE30 \uD310\uAD50" },
+    { pos: 21, name: "\uB3C4\uC6B0\uB11B\uD329\uD1A0\uB9AC", emoji: "\u{1F3ED}", area: "\uC11C\uC6B8 \uAC15\uB0A8" },
+    { pos: 22, name: "\uD30C\uD2F0\uC138\uB9AC \uB8E8\uCCB4", emoji: "\u2728", area: "\uC11C\uC6B8 \uCCAD\uB2F4" },
+    { pos: 23, name: "\uB974\uBC45\uBCA0\uC774\uCEE4\uB9AC", emoji: "\u{1F1EB}\u{1F1F7}", area: "\uC11C\uC6B8 \uC774\uD0DC\uC6D0" },
+    { pos: 24, name: "\uC131\uC2EC\uB2F9", emoji: "\u{1F3DB}\uFE0F", area: "\uB300\uC804 \uC911\uAD6C" }
+  ];
+  var BINGO_PRIZES = [
+    { lines: 1, name: "\uBE75\uBAA8\uB2DD \uAD7F\uC988\uD329", desc: "\uC5D0\uCF54\uBC31 + \uC2A4\uD2F0\uCEE4 \uC138\uD2B8", emoji: "\u{1F392}" },
+    { lines: 2, name: "\uC81C\uD734 \uBE75\uC9D1 \uC0C1\uD488\uAD8C", desc: "1\uB9CC\uC6D0 \uC0C1\uD488\uAD8C", emoji: "\u{1F39F}\uFE0F" },
+    { lines: 3, name: "\uD504\uB9AC\uBBF8\uC5C4 \uBE75 \uC138\uD2B8", desc: "3\uB9CC\uC6D0 \uC0C1\uB2F9", emoji: "\u{1F35E}" },
+    { lines: 5, name: "\uC5F0\uAC04 \uD504\uB9AC\uBBF8\uC5C4 + 5\uB9CC\uC6D0", desc: "\uD480\uBE59\uACE0 \uB2EC\uC131!", emoji: "\u{1F451}" }
+  ];
   var Badge = ({ count }) => count > 0 ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { position: "absolute", top: -4, right: -4, background: C.badge, color: "#fff", borderRadius: 99, fontSize: 10, fontWeight: 700, minWidth: 16, height: 16, display: "flex", alignItems: "center", justifyContent: "center", padding: "0 4px" }, children: count > 99 ? "99+" : count }) : null;
   var GradeBadge = ({ grade, size = "sm" }) => {
     const s = size === "sm" ? { fontSize: 10, padding: "1px 6px" } : { fontSize: 12, padding: "2px 8px" };
@@ -22431,6 +22464,7 @@ input, textarea, button { font-family: inherit; }
     const [tasteProfile, setTasteProfile] = (0, import_react4.useState)(DEFAULT_TASTE_PROFILE);
     const [showSurvey, setShowSurvey] = (0, import_react4.useState)(true);
     const [isFirstSurvey, setIsFirstSurvey] = (0, import_react4.useState)(true);
+    const [showBingo, setShowBingo] = (0, import_react4.useState)(false);
     const grade = getGrade(pts);
     const nextGrade = getNextGrade(pts);
     const addPts = (n) => setPts((p) => p + n);
@@ -22480,7 +22514,10 @@ input, textarea, button { font-family: inherit; }
           addPts,
           grade
         }
-      ) : showActivity ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ActivityHistoryView, { pts, grade, nextGrade, onBack: () => setShowActivity(false) }) : showNotifView ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+      ) : showActivity ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ActivityHistoryView, { pts, grade, nextGrade, onBack: () => setShowActivity(false) }) : showBingo ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BingoEventView, { onBack: () => setShowBingo(false), posts, setPosts, addPts, grade, bakeries, onDetail: (b) => {
+        setShowBingo(false);
+        setDetail(b);
+      } }) : showNotifView ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
         NotificationView,
         {
           notifications,
@@ -22495,7 +22532,10 @@ input, textarea, button { font-family: inherit; }
           }
         }
       ) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
-        tab === 0 && /* @__PURE__ */ (0, import_jsx_runtime.jsx)(InfoTab, { bakeries, onDetail: setDetail, addPts, grade, onOpenMap: () => setShowMap(true), onOpenCalendar: () => setShowCalendar(true), tasteProfile, onOpenNotif: () => setShowNotifView(true), unreadCount: notifications.filter((n) => !n.read).length }),
+        tab === 0 && /* @__PURE__ */ (0, import_jsx_runtime.jsx)(InfoTab, { bakeries, onDetail: setDetail, addPts, grade, onOpenMap: () => setShowMap(true), onOpenCalendar: () => setShowCalendar(true), tasteProfile, onOpenNotif: () => setShowNotifView(true), unreadCount: notifications.filter((n) => !n.read).length, onOpenBingo: () => setShowBingo(true), onOpenSurvey: () => {
+          setIsFirstSurvey(false);
+          setShowSurvey(true);
+        } }),
         tab === 1 && /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FeedTab, { posts, setPosts, addPts, showCompose, setShowCompose, grade, onOpenPost: setPostDetail, bakeries, onBakeryTag: (bName) => {
           const b = bakeries.find((x) => x.name === bName);
           if (b) setDetail(b);
@@ -22524,7 +22564,7 @@ input, textarea, button { font-family: inherit; }
           }
         }
       ),
-      !detail && !chatRoom && !showMap && !showCalendar && !postDetail && !showActivity && !showNotifView && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { height: 80, background: C.bg, borderTop: `1px solid ${C.border}`, display: "flex", alignItems: "flex-start", paddingTop: 8, flexShrink: 0 }, children: tabs.map((t, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", { onClick: () => setTab(i), style: { flex: 1, display: "flex", flexDirection: "column", alignItems: "center", gap: 2, background: "none", border: "none", cursor: "pointer", padding: "4px 0", position: "relative" }, children: [
+      !detail && !chatRoom && !showMap && !showCalendar && !postDetail && !showActivity && !showBingo && !showNotifView && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { height: 80, background: C.bg, borderTop: `1px solid ${C.border}`, display: "flex", alignItems: "flex-start", paddingTop: 8, flexShrink: 0 }, children: tabs.map((t, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", { onClick: () => setTab(i), style: { flex: 1, display: "flex", flexDirection: "column", alignItems: "center", gap: 2, background: "none", border: "none", cursor: "pointer", padding: "4px 0", position: "relative" }, children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { color: tab === i ? C.primary : C.textTer, transition: "color 0.2s" }, children: t.icon }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: 10, fontWeight: tab === i ? 700 : 500, color: tab === i ? C.primary : C.textTer }, children: t.label }),
         i === 2 && /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Badge, { count: 19 })
@@ -23204,9 +23244,18 @@ input, textarea, button { font-family: inherit; }
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { height: 20 } })
     ] });
   }
-  function InfoTab({ bakeries, onDetail, addPts, grade, onOpenMap, onOpenCalendar, tasteProfile, onOpenNotif, unreadCount }) {
+  function InfoTab({ bakeries, onDetail, addPts, grade, onOpenMap, onOpenCalendar, tasteProfile, onOpenNotif, unreadCount, onOpenBingo, onOpenSurvey }) {
     const profile = tasteProfile || DEFAULT_TASTE_PROFILE;
     const [search, setSearch] = (0, import_react4.useState)("");
+    const [bannerIdx, setBannerIdx] = (0, import_react4.useState)(0);
+    const banners = [
+      { id: "bingo", bg: "linear-gradient(135deg, #E8601C 0%, #FF8A50 100%)", emoji: "\u{1F3B2}", title: "\uBE75\uC9D1 \uBE59\uACE0\uD310 \uCC4C\uB9B0\uC9C0", sub: "\uB9AC\uBDF0 \uC4F0\uACE0 \uBE59\uACE0 \uC644\uC131\uD558\uBA74 \uC0C1\uD488\uC774!", action: onOpenBingo },
+      { id: "bbti", bg: "linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%)", emoji: "\u{1F9EA}", title: "\uB098\uC758 \uBE75BTI\uB294?", sub: "10\uBB38\uD56D\uC73C\uB85C \uC54C\uC544\uBCF4\uB294 \uBE75 \uC720\uD615 \uAC80\uC0AC", action: onOpenSurvey }
+    ];
+    (0, import_react4.useEffect)(() => {
+      const timer = setInterval(() => setBannerIdx((i) => (i + 1) % banners.length), 4e3);
+      return () => clearInterval(timer);
+    }, []);
     const findBakery = (name) => bakeries.find((b) => b.name.includes(name.split(" ")[0])) || null;
     const SectionHeader = ({ icon, title, sub, onMore }) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { display: "flex", alignItems: "flex-end", justifyContent: "space-between", padding: "0 16px", marginBottom: 10 }, children: [
       /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
@@ -23247,6 +23296,21 @@ input, textarea, button { font-family: inherit; }
         ] })
       ] }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { flex: 1, overflow: "auto", paddingBottom: 12 }, children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { padding: "2px 16px 12px" }, children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
+          "button",
+          {
+            onClick: banners[bannerIdx].action,
+            style: { width: "100%", background: banners[bannerIdx].bg, border: "none", borderRadius: 14, padding: "16px 18px", cursor: "pointer", textAlign: "left", position: "relative", overflow: "hidden", height: 100, display: "flex", alignItems: "center", gap: 14, boxSizing: "border-box" },
+            children: [
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: 38 }, children: banners[bannerIdx].emoji }),
+              /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
+                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 15, fontWeight: 800, color: "#fff", marginBottom: 4 }, children: banners[bannerIdx].title }),
+                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 12, color: "rgba(255,255,255,0.85)" }, children: banners[bannerIdx].sub })
+              ] }),
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { position: "absolute", bottom: 10, left: "50%", transform: "translateX(-50%)", display: "flex", gap: 5 }, children: banners.map((_, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { width: 6, height: 6, borderRadius: "50%", background: i === bannerIdx ? "#fff" : "rgba(255,255,255,0.4)" } }, i)) })
+            ]
+          }
+        ) }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { display: "flex", gap: 10, padding: "2px 16px 20px" }, children: [
           /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
             "button",
@@ -23889,6 +23953,197 @@ input, textarea, button { font-family: inherit; }
         ] }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { marginTop: 10, textAlign: "center", fontSize: 11, color: C.success, fontWeight: 700 }, children: "\uD65C\uB3D9\uC9C0\uC218 +15\uC810 \uC801\uB9BD \uC608\uC815 \u2728" })
       ] })
+    ] });
+  }
+  function calcBingoLines(completed) {
+    const grid = Array(25).fill(false);
+    completed.forEach((p) => grid[p] = true);
+    let lines = 0;
+    for (let r = 0; r < 5; r++) {
+      if ([0, 1, 2, 3, 4].every((c) => grid[r * 5 + c])) lines++;
+    }
+    for (let c = 0; c < 5; c++) {
+      if ([0, 1, 2, 3, 4].every((r) => grid[r * 5 + c])) lines++;
+    }
+    if ([0, 6, 12, 18, 24].every((i) => grid[i])) lines++;
+    if ([4, 8, 12, 16, 20].every((i) => grid[i])) lines++;
+    return lines;
+  }
+  function BingoEventView({ onBack, posts, setPosts, addPts, grade, bakeries, onDetail }) {
+    const [bingoTab, setBingoTab] = (0, import_react4.useState)("bingo");
+    const [completedCells, setCompletedCells] = (0, import_react4.useState)(/* @__PURE__ */ new Set([1, 5, 9, 14, 20]));
+    const [showReview, setShowReview] = (0, import_react4.useState)(null);
+    const [reviewText, setReviewText] = (0, import_react4.useState)("");
+    const [reviewTopic, setReviewTopic] = (0, import_react4.useState)("\uC77C\uC0C1\xB7\uC218\uB2E4");
+    const [reviewPhotos, setReviewPhotos] = (0, import_react4.useState)([]);
+    const [claimedPrizes, setClaimedPrizes] = (0, import_react4.useState)(/* @__PURE__ */ new Set());
+    const [showPin, setShowPin] = (0, import_react4.useState)(false);
+    const [pinValue, setPinValue] = (0, import_react4.useState)("");
+    const [claimingPrize, setClaimingPrize] = (0, import_react4.useState)(null);
+    const bingoLines = calcBingoLines(completedCells);
+    const topics = ["\uC77C\uC0C1\xB7\uC218\uB2E4", "\uBE75 \uB9AC\uBDF0", "\uBE75 \uBAA8\uC784", "\uBE75 \uC9C8\uBB38"];
+    const handleSubmitReview = () => {
+      if (!reviewText.trim() || !showReview) return;
+      const newCell = showReview.pos;
+      setCompletedCells((prev) => /* @__PURE__ */ new Set([...prev, newCell]));
+      const newPost = {
+        id: Date.now(),
+        user: "\uB098",
+        avatar: "\u{1F642}",
+        grade,
+        time: "\uBC29\uAE08 \uC804",
+        text: reviewText,
+        likes: 0,
+        comments: 0,
+        liked: false,
+        bakeryTag: showReview.name,
+        badge: "\u{1F3B2} \uBE59\uACE0"
+      };
+      setPosts((prev) => [newPost, ...prev]);
+      addPts(10);
+      setShowReview(null);
+      setReviewText("");
+      setReviewTopic("\uC77C\uC0C1\xB7\uC218\uB2E4");
+      setReviewPhotos([]);
+    };
+    const handleClaimPrize = (prize) => {
+      setClaimingPrize(prize);
+      setShowPin(true);
+      setPinValue("");
+    };
+    const handlePinConfirm = () => {
+      if (pinValue === "1234") {
+        setClaimedPrizes((prev) => /* @__PURE__ */ new Set([...prev, claimingPrize.lines]));
+        setShowPin(false);
+        setPinValue("");
+        setClaimingPrize(null);
+      }
+    };
+    return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { flex: 1, display: "flex", flexDirection: "column", overflow: "hidden", background: C.bg }, children: [
+      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { display: "flex", alignItems: "center", gap: 12, padding: "12px 16px", borderBottom: `1px solid ${C.border}`, flexShrink: 0 }, children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: onBack, style: { background: "none", border: "none", cursor: "pointer", padding: 0 }, children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowLeft, { size: 22, color: C.text }) }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { style: { fontSize: 17, fontWeight: 800, margin: 0, color: C.text }, children: "\uBE75\uC9D1 \uBE59\uACE0\uD310 \uCC4C\uB9B0\uC9C0" })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { padding: "12px 16px 8px", flexShrink: 0 }, children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 6 }, children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { style: { fontSize: 13, fontWeight: 700, color: C.text }, children: [
+            completedCells.size,
+            "/25 \uC644\uB8CC"
+          ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { style: { fontSize: 13, fontWeight: 700, color: C.primary }, children: [
+            bingoLines,
+            "\uC904 \uBE59\uACE0"
+          ] })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { height: 6, background: C.bgGray, borderRadius: 99, overflow: "hidden" }, children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { height: "100%", width: `${completedCells.size / 25 * 100}%`, background: C.primary, borderRadius: 99, transition: "width 0.3s" } }) })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { display: "flex", borderBottom: `1px solid ${C.border}`, flexShrink: 0 }, children: [{ key: "bingo", label: "\uBE59\uACE0\uD310" }, { key: "prizes", label: "\uC0C1\uD488 \uC218\uB839" }].map((t) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: () => setBingoTab(t.key), style: { flex: 1, padding: "10px 0", background: "none", border: "none", borderBottom: bingoTab === t.key ? `2px solid ${C.primary}` : "2px solid transparent", color: bingoTab === t.key ? C.primary : C.textSec, fontSize: 14, fontWeight: bingoTab === t.key ? 700 : 500, cursor: "pointer" }, children: t.label }, t.key)) }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { flex: 1, overflow: "auto", padding: 16 }, children: bingoTab === "bingo" ? (
+        /* 5x5 Bingo Grid */
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gap: 6 }, children: BINGO_BAKERIES.map((b) => {
+          const done = completedCells.has(b.pos);
+          return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", { onClick: () => {
+            if (!done) setShowReview(b);
+          }, style: { aspectRatio: "1", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 2, background: done ? "#FFF3ED" : "#fff", border: done ? "2px solid #E8601C" : `1px solid ${C.border}`, borderRadius: 10, cursor: done ? "default" : "pointer", padding: 4, position: "relative" }, children: [
+            done && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { position: "absolute", top: 3, right: 3, width: 14, height: 14, borderRadius: "50%", background: C.primary, display: "flex", alignItems: "center", justifyContent: "center" }, children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Check, { size: 9, color: "#fff" }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: 18 }, children: b.emoji }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: 9, fontWeight: 600, color: C.text, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap", maxWidth: "100%" }, children: b.name })
+          ] }, b.pos);
+        }) })
+      ) : (
+        /* Prizes Tab */
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { display: "flex", flexDirection: "column", gap: 12 }, children: BINGO_PRIZES.map((prize) => {
+          const canClaim = bingoLines >= prize.lines && !claimedPrizes.has(prize.lines);
+          const claimed = claimedPrizes.has(prize.lines);
+          return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { display: "flex", alignItems: "center", gap: 12, padding: 14, background: "#fff", border: `1px solid ${C.border}`, borderRadius: 14 }, children: [
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { width: 44, height: 44, borderRadius: 12, background: C.primaryLight, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 22 }, children: prize.emoji }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { flex: 1 }, children: [
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 14, fontWeight: 700, color: C.text }, children: prize.name }),
+              /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { fontSize: 11, color: C.textSec }, children: [
+                prize.desc,
+                " \xB7 ",
+                prize.lines,
+                "\uC904 \uB2EC\uC131"
+              ] })
+            ] }),
+            claimed ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: 11, fontWeight: 700, color: C.success, background: C.success + "18", padding: "4px 8px", borderRadius: 99 }, children: "\uC218\uB839\uC644\uB8CC \u2713" }) : canClaim ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: () => handleClaimPrize(prize), style: { fontSize: 11, fontWeight: 700, color: "#fff", background: C.primary, border: "none", padding: "6px 10px", borderRadius: 99, cursor: "pointer" }, children: "\uC0C1\uD488 \uC218\uB839\uD558\uAE30" }) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { style: { fontSize: 11, color: C.textTer }, children: [
+              prize.lines,
+              "\uC904 \uD544\uC694"
+            ] })
+          ] }, prize.lines);
+        }) })
+      ) }),
+      showReview && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { position: "absolute", inset: 0, background: C.bg, zIndex: 100, display: "flex", flexDirection: "column", overflow: "auto" }, children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { display: "flex", alignItems: "center", justifyContent: "space-between", padding: "14px 16px", borderBottom: `1px solid ${C.border}`, flexShrink: 0 }, children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { style: { fontSize: 16, fontWeight: 800, margin: 0 }, children: "\uB9AC\uBDF0 \uC791\uC131" }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: () => setShowReview(null), style: { background: "none", border: "none", cursor: "pointer" }, children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(X, { size: 22, color: C.text }) })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { flex: 1, overflow: "auto", padding: 16 }, children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { display: "flex", alignItems: "center", gap: 10, padding: 12, background: C.primaryLight, borderRadius: 12, marginBottom: 20 }, children: [
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: 28 }, children: showReview.emoji }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 14, fontWeight: 700, color: C.text }, children: showReview.name }),
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 11, color: C.textSec }, children: showReview.area })
+            ] })
+          ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { marginBottom: 16 }, children: [
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("label", { style: { fontSize: 13, fontWeight: 700, color: C.text, marginBottom: 8, display: "block" }, children: "\uC8FC\uC81C" }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { display: "flex", gap: 8, flexWrap: "wrap" }, children: topics.map((t) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: () => setReviewTopic(t), style: { padding: "6px 12px", borderRadius: 99, border: reviewTopic === t ? "none" : `1px solid ${C.border}`, background: reviewTopic === t ? C.primary : "#fff", color: reviewTopic === t ? "#fff" : C.textSec, fontSize: 12, fontWeight: 600, cursor: "pointer" }, children: t }, t)) })
+          ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { marginBottom: 16 }, children: [
+            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { style: { fontSize: 13, fontWeight: 700, color: C.text, marginBottom: 8, display: "block" }, children: [
+              "\uB0B4\uC6A9 ",
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { color: C.primary }, children: "*" })
+            ] }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+              "textarea",
+              {
+                value: reviewText,
+                onChange: (e) => setReviewText(e.target.value),
+                placeholder: "\uAD81\uAE08\uD55C \uAC83\uC774\uB098 \uB9D0\uD558\uACE0 \uC2F6\uC740 \uAC83\uC744 \uC54C\uB824\uC8FC\uC138\uC694.",
+                style: { width: "100%", minHeight: 120, border: `1px solid ${C.border}`, borderRadius: 12, padding: 12, fontSize: 14, resize: "none", outline: "none", fontFamily: "inherit", boxSizing: "border-box" }
+              }
+            )
+          ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { marginBottom: 24 }, children: [
+            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 8 }, children: [
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("label", { style: { fontSize: 13, fontWeight: 700, color: C.text }, children: "\uC0AC\uC9C4" }),
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: 11, color: C.primary, cursor: "pointer" }, children: "\uC0AC\uC9C4 \uAFB8\uBBF8\uAE30 >" })
+            ] }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", { style: { display: "flex", alignItems: "center", gap: 6, padding: "10px 14px", background: C.bgGray, border: `1px dashed ${C.border}`, borderRadius: 10, cursor: "pointer" }, children: [
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Camera, { size: 16, color: C.textSec }),
+              /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { style: { fontSize: 12, color: C.textSec }, children: [
+                reviewPhotos.length,
+                "/5"
+              ] })
+            ] })
+          ] })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { padding: "12px 16px 24px", flexShrink: 0 }, children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: handleSubmitReview, style: { width: "100%", padding: 16, background: reviewText.trim() ? C.primary : C.bgGray, color: reviewText.trim() ? "#fff" : C.textTer, border: "none", borderRadius: 14, fontSize: 16, fontWeight: 800, cursor: reviewText.trim() ? "pointer" : "default" }, children: "\uB4F1\uB85D\uD558\uAE30" }) })
+      ] }),
+      showPin && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { position: "absolute", inset: 0, background: "rgba(0,0,0,0.5)", zIndex: 200, display: "flex", alignItems: "center", justifyContent: "center" }, children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { background: "#fff", borderRadius: 20, padding: 24, width: 280, textAlign: "center" }, children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { style: { fontSize: 16, fontWeight: 800, margin: "0 0 4px" }, children: "\uC0C1\uD488 \uC218\uB839 \uD655\uC778" }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { style: { fontSize: 12, color: C.textSec, margin: "0 0 16px" }, children: "PIN 4\uC790\uB9AC\uB97C \uC785\uB825\uD558\uC138\uC694" }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+          "input",
+          {
+            type: "password",
+            maxLength: 4,
+            value: pinValue,
+            onChange: (e) => setPinValue(e.target.value.replace(/\D/g, "")),
+            style: { width: "100%", padding: 12, fontSize: 24, textAlign: "center", border: `1px solid ${C.border}`, borderRadius: 10, outline: "none", letterSpacing: 8, boxSizing: "border-box" },
+            placeholder: "\xB7\xB7\xB7\xB7"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { display: "flex", gap: 8, marginTop: 16 }, children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: () => {
+            setShowPin(false);
+            setPinValue("");
+            setClaimingPrize(null);
+          }, style: { flex: 1, padding: 12, background: C.bgGray, border: "none", borderRadius: 10, fontSize: 14, fontWeight: 600, cursor: "pointer" }, children: "\uCDE8\uC18C" }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: handlePinConfirm, style: { flex: 1, padding: 12, background: C.primary, color: "#fff", border: "none", borderRadius: 10, fontSize: 14, fontWeight: 700, cursor: "pointer" }, children: "\uD655\uC778" })
+        ] })
+      ] }) })
     ] });
   }
   function NotificationView({ notifications, setNotifications, onBack, onOpenPost }) {
