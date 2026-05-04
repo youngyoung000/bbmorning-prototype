@@ -22216,107 +22216,112 @@ input, textarea, button { font-family: inherit; }
     { id: 204, name: "\uBE75\uACF5\uBC29 \uD558\uB8E8", area: "\uC81C\uC8FC \uC11C\uADC0\uD3EC\uC2DC", category: "\uCC9C\uC5F0\uBC1C\uD6A8 \uBE75", img: "\u{1F35E}", status: "\uC624\uD508 \uC608\uC815", dday: "D-12", desc: "\uC81C\uC8FC \uAC10\uADE4 \uD65C\uC6A9\uD55C \uB85C\uCEEC \uBCA0\uC774\uCEE4\uB9AC", openDate: "4/24 \uC624\uD508" },
     { id: 205, name: "\uB3C4\uC6B0\uB11B \uD329\uD1A0\uB9AC", area: "\uB300\uAD6C \uC911\uAD6C \uB3D9\uC131\uB85C", category: "\uB3C4\uB11B \uC804\uBB38\uC810", img: "\u{1F369}", status: "\uAC00\uC624\uD508 \uC911", dday: "D-2", desc: "\uC218\uC81C \uB3C4\uB11B 20\uC5EC\uC885 \uC804\uBB38\uC810", openDate: "4/14 \uC815\uC2DD\uC624\uD508" }
   ];
-  var SURVEY_QUESTIONS = [
-    {
-      key: "bread_role",
-      emoji: "\u{1F35E}",
-      title: "\uBE75\uC740 \uB2F9\uC2E0\uC5D0\uAC8C \uC5B4\uB5A4 \uC874\uC7AC\uC778\uAC00\uC694?",
-      sub: "\uB2F9\uC2E0\uC758 \uC778\uC0DD\uC5D0\uC11C \uBE75\uC758 \uD3EC\uC9C0\uC158\uC744 \uC54C\uB824\uC8FC\uC138\uC694",
-      multi: false,
-      options: [
-        { value: "meal", label: "\uC5C6\uC73C\uBA74 \uBABB \uC0AC\uB294 \uC8FC\uC2DD", sub: "\uC2DD\uC0AC\uBE75 \uC5C6\uC774\uB294 \uBABB \uC0B4\uC544\uC694", emoji: "\u{1F956}" },
-        { value: "dessert", label: "\uAE30\uBD84 \uC88B\uC744 \uB54C \uB514\uC800\uD2B8", sub: "\uB2EC\uCF64\uD55C \uB514\uC800\uD2B8\uBE75\uC774 \uCD5C\uACE0", emoji: "\u{1F9C1}" },
-        { value: "both", label: "\uC0C1\uD669 \uB530\uB77C \uB2E4 \uC0AC\uB791\uD574\uC694", sub: "\uC2DD\uC0AC\uBE75\xB7\uB514\uC800\uD2B8\uBE75 \uBAA8\uB450 OK", emoji: "\u{1F495}" }
-      ]
-    },
-    {
-      key: "visit_style",
-      emoji: "\u{1F950}",
-      title: "\uBE75\uC9D1 \uD0D0\uBC29 \uC2A4\uD0C0\uC77C\uC740\uC694?",
-      sub: "\uBE75\uC744 \uB9CC\uB098\uB7EC \uAC00\uB294 \uB2F9\uC2E0\uB9CC\uC758 \uBC29\uC2DD",
-      multi: false,
-      options: [
-        { value: "offline", label: "\uC9C1\uC811 \uAC00\uC57C \uC81C\uB9DB", sub: "\uC6E8\uC774\uD305\uB3C4 \uB9C8\uB2E4\uC54A\uB294 \uC624\uD504\uB77C\uC778\uD30C", emoji: "\u{1F6B6}" },
-        { value: "online", label: "\uBC30\uB2EC\xB7\uD53D\uC5C5\uC774 \uD3B8\uD574\uC694", sub: "\uC571\uC5D0\uC11C \uC8FC\uBB38\uC774 \uCD5C\uACE0", emoji: "\u{1F4E6}" },
-        { value: "mixed", label: "\uC0C1\uD669 \uB530\uB77C \uC790\uC720\uC790\uC7AC", sub: "\uB54C\uC640 \uC7A5\uC18C\uC5D0 \uB9DE\uAC8C", emoji: "\u{1F3B2}" }
-      ]
-    },
-    {
-      key: "favorites",
-      emoji: "\u2764\uFE0F",
-      title: "\uC88B\uC544\uD558\uB294 \uBE75 \uC885\uB958\uB294?",
-      sub: "\uC5EC\uB7EC \uAC1C \uACE8\uB77C\uB3C4 \uAD1C\uCC2E\uC544\uC694 (\uCD5C\uC18C 1\uAC1C)",
-      multi: true,
-      options: [
-        { value: "\uD06C\uB8E8\uC544\uC0C1", emoji: "\u{1F950}" },
-        { value: "\uC0CC\uB4DC\uC704\uCE58", emoji: "\u{1F96A}" },
-        { value: "\uC2DD\uBE75", emoji: "\u{1F35E}" },
-        { value: "\uBC14\uAC8C\uD2B8", emoji: "\u{1F956}" },
-        { value: "\uC18C\uAE08\uBE75", emoji: "\u{1F9C2}" },
-        { value: "\uB9C8\uCE74\uB871", emoji: "\u{1F36C}" },
-        { value: "\uD718\uB0AD\uC2DC\uC5D0", emoji: "\u{1F7E8}" },
-        { value: "\uB9C8\uB4E4\uB80C", emoji: "\u{1F41A}" },
-        { value: "\uD0C0\uB974\uD2B8", emoji: "\u{1F370}" },
-        { value: "\uC2A4\uCF58", emoji: "\u{1FAD3}" },
-        { value: "\uBCA0\uC774\uAE00", emoji: "\u{1F96F}" },
-        { value: "\uB3C4\uB11B", emoji: "\u{1F369}" },
-        { value: "\uCF00\uC774\uD06C", emoji: "\u{1F382}" },
-        { value: "\uCFE0\uD0A4", emoji: "\u{1F36A}" },
-        { value: "\uD30C\uC774", emoji: "\u{1F967}" },
-        { value: "\uC0AC\uC6CC\uB3C4\uC6B0", emoji: "\u{1F33E}" }
-      ]
-    },
-    {
-      key: "budget",
-      emoji: "\u{1F4B0}",
-      title: "\uBE75 \uD558\uB098\uC5D0 \uC5BC\uB9C8\uAE4C\uC9C0 \uC4F8 \uC218 \uC788\uC5B4\uC694?",
-      sub: "\uAC00\uC131\uBE44 vs \uAC00\uC2EC\uBE44, \uB2F9\uC2E0\uC758 \uC120\uD0DD\uC740?",
-      multi: false,
-      options: [
-        { value: "under3k", label: "3\uCC9C\uC6D0 \uC774\uD558", sub: "\uAC00\uC131\uBE44\uAC00 \uCD5C\uACE0!", emoji: "\u{1FA99}" },
-        { value: "3to5k", label: "3-5\uCC9C\uC6D0", sub: "\uB531 \uC801\uB2F9\uD55C \uAC00\uACA9", emoji: "\u{1F4B5}" },
-        { value: "5to8k", label: "5-8\uCC9C\uC6D0", sub: "\uB9DB\uC788\uC73C\uBA74 OK", emoji: "\u{1F4B3}" },
-        { value: "unlimited", label: "\uAC00\uCE58\uB9CC \uC788\uB2E4\uBA74 \uBB34\uC81C\uD55C", sub: "\uAC00\uC2EC\uBE44 \uC2E0\uBD09\uC790", emoji: "\u{1F48E}" }
-      ]
-    },
-    {
-      key: "areas",
-      emoji: "\u{1F5FA}\uFE0F",
-      title: "\uC8FC\uB85C \uBE75 \uC6D0\uC815 \uAC00\uB294 \uC9C0\uC5ED\uC740?",
-      sub: "\uC5EC\uB7EC \uAC1C \uC120\uD0DD \uAC00\uB2A5\uD574\uC694",
-      multi: true,
-      options: [
-        { value: "\uC11C\uC6B8", emoji: "\u{1F3D9}\uFE0F" },
-        { value: "\uACBD\uAE30\xB7\uC778\uCC9C", emoji: "\u{1F3D8}\uFE0F" },
-        { value: "\uAC15\uC6D0", emoji: "\u26F0\uFE0F" },
-        { value: "\uCDA9\uCCAD", emoji: "\u{1F33E}" },
-        { value: "\uC804\uB77C", emoji: "\u{1F30A}" },
-        { value: "\uACBD\uC0C1", emoji: "\u{1F3D4}\uFE0F" },
-        { value: "\uC81C\uC8FC", emoji: "\u{1F334}" },
-        { value: "\uD574\uC678\uB3C4 \uAC00\uC694", emoji: "\u2708\uFE0F" }
-      ]
-    },
-    {
-      key: "lifestyle",
-      emoji: "\u{1F525}",
-      title: "\uB2F9\uC2E0\uC740 \uC5B4\uB5A4 \uBE75 \uB355\uD6C4?",
-      sub: "\uAC00\uC7A5 \uAC00\uAE4C\uC6B4 \uC2A4\uD0C0\uC77C\uC744 \uACE8\uB77C\uC8FC\uC138\uC694",
-      multi: false,
-      options: [
-        { value: "explorer", label: "\uD0D0\uD5D8\uAC00\uD615", sub: "\uC0C8\uB85C\uC6B4 \uBE75\uC9D1\uB9CC \uCC3E\uC544\uB2E4\uB140\uC694", emoji: "\u{1F9ED}" },
-        { value: "loyal", label: "\uB2E8\uACE8\uD30C", sub: "\uB0B4 \uC9D1 \uBE75\uC9D1\uC774 \uCD5C\uACE0", emoji: "\u{1F3E1}" },
-        { value: "trendy", label: "\uD2B8\uB80C\uB4DC\uC138\uD130", sub: "SNS \uD56B\uD50C\uC740 \uB2E4 \uAC00\uBD10\uC57C\uC8E0", emoji: "\u{1F4F8}" },
-        { value: "treasure", label: "\uC228\uC740 \uBCF4\uC11D \uBC1C\uAD74\uB7EC", sub: "\uC548 \uC54C\uB824\uC9C4 \uACF3\uC774 \uC81C\uB9DB", emoji: "\u{1F48E}" }
-      ]
-    }
+  var BBTI_QUESTIONS = [
+    { text: "\uB4DC\uB514\uC5B4 \uAC13 \uC624\uD508\uD55C \uBE75\uC9D1\uC5D0 \uB3C4\uCC29! \uD2B8\uB808\uC774\uB97C \uB4E4\uACE0 \uC81C\uC77C \uBA3C\uC800 \uC9D1\uB294 \uBE75\uC740?", options: [
+      { text: "\uAC89\uC740 \uD30C\uC0AD, \uC18D\uC740 \uCD09\uCD09\uD55C \uD06C\uB8E8\uC544\uC0C1. \uC774 \uC18C\uB9AC\uAC00 \uC88B\uC544\uC11C \uC0B0\uB2E4", scores: { C: 1 } },
+      { text: "\uD55C \uC785 \uBCA0\uC5B4\uBB3C\uBA74 \uAD6C\uB984 \uC704\uC5D0 \uCC29\uC9C0\uD558\uB294 \uB290\uB08C\uC758 \uC0DD\uD06C\uB9BC\uBE75", scores: { S: 1 } }
+    ] },
+    { text: "\uC810\uC2EC \uBA39\uACE0 \uC2AC\uC2AC \uC878\uB9B4 \uB54C... \uBE75\uB3D9\uACE0(\uBE75 \uB0C9\uB3D9\uACE0)\uC5D0\uC11C \uAEBC\uB0B4 \uB370\uC6B0\uB294 \uB098\uC758 \uBE44\uC7A5\uC758 \uBE75\uC740?", options: [
+      { text: "\uC228\uACA8\uB454 \uCD08\uCF5C\uB9BF \uD06C\uB8E8\uC544\uC0C1\uC744 \uC5D0\uC5B4\uD504\uB77C\uC774\uC5B4\uC5D0 \uB3CC\uB9B0\uB2E4 (\uB2E8 \uAC70 \uC5C6\uC778 \uC624\uD6C4\uB97C \uBABB \uB118\uACA8)", scores: { W: 1 } },
+      { text: "\uC62C\uB9AC\uBE0C \uD3EC\uCE74\uCE58\uC544 \uD55C \uC870\uAC01\uC744 \uC0B4\uC9DD \uD1A0\uC2A4\uD305 (\uB2F4\uBC31\uD574\uC57C \uC9C4\uC9DC \uBE75\uC774\uC9C0)", scores: { D: 1 } }
+    ] },
+    { text: '\uD1A0\uC694\uC77C \uC544\uCE68, \uBE75 \uC0AC\uB7EC \uB098\uAC00\uB824\uB294\uB370 \uCE5C\uAD6C\uAC00 \uBB3C\uC5B4\uBD04: "\uC5B4\uB514 \uAC08 \uAC70\uC57C?"', options: [
+      { text: '"\uC5B4\uC81C \uB9B4\uC2A4\uC5D0\uC11C \uBCF8 \uB370 \uC788\uB294\uB370, \uAC70\uAE30 \uAC00\uBCFC\uB798!" (\uC9C0\uB3C4 \uC571 \uCF1C\uB294 \uC911)', scores: { H: 1 } },
+      { text: '"\uD56D\uC0C1 \uAC00\uB358 \uB370~ \uC0AC\uC7A5\uB2D8\uC774 \uB098 \uC54C\uC544\uBD10 \u314E\u314E"', scores: { L: 1 } }
+    ] },
+    { text: "\uBE75\uC9D1 \uBA54\uB274\uD310 \uC55E\uC5D0 \uC130\uB2E4. \uB208\uC774 \uC81C\uC77C \uBA3C\uC800 \uAC00\uB294 \uACF3\uC740?", options: [
+      { text: "\uC6D0\uC7AC\uB8CC \uD45C\uC2DC\uB780 (\uBC00\uAC00\uB8E8 \uC885\uB958, \uCCA8\uAC00\uBB3C \uC5EC\uBD80 \uD655\uC778\uC740 \uAE30\uBCF8\uC774\uC9C0)", scores: { N: 1 } },
+      { text: "'\uC774 \uB2EC\uC758 \uC778\uAE30 \uBA54\uB274' \uC2A4\uD2F0\uCEE4\uAC00 \uBD99\uC740 \uCABD (\uB9CE\uC774 \uBA39\uB294 \uB374 \uC774\uC720\uAC00 \uC788\uC5B4)", scores: { J: 1 } }
+    ] },
+    { text: "\uB2F9\uC2E0\uC740 \uC9C0\uAE08 \uC0CC\uB4DC\uC704\uCE58 \uC7A5\uC778. \uBE75 \uC120\uD0DD\uC758 \uC21C\uAC04!", options: [
+      { text: "\uCE58\uC544\uBC14\uD0C0\uB97C \uBC18 \uAC08\uB77C \uADF8\uB9B4\uC5D0 \uC9C0\uAE00\uC9C0\uAE00 \uD1A0\uC2A4\uD305 (\uBC14\uC0AD\uD55C \uB2E8\uBA74\uC774 \uD575\uC2EC)", scores: { C: 1 } },
+      { text: "\uAC13 \uAD6C\uC6B4 \uC6B0\uC720\uC2DD\uBE75\uC744 \uD3EC\uC2AC\uD3EC\uC2AC \uC798\uB77C\uC11C (\uBD80\uB4DC\uB7EC\uC6C0\uC5D0 \uBAA8\uB4E0 \uAC78 \uB9E1\uAE34\uB2E4)", scores: { S: 1 } }
+    ] },
+    { text: "\uBE75\uC774\uB791 \uC138\uD2B8\uB85C \uC8FC\uBB38\uD558\uB294 \uB098\uB9CC\uC758 \uAD6D\uB8F0 \uC74C\uB8CC\uB294?", options: [
+      { text: "\uB2EC\uB2EC\uD55C \uBC14\uB2D0\uB77C\uB77C\uB5BC or \uAFC0 \uB4E4\uC5B4\uAC04 \uBC00\uD06C\uD2F0 (\uBE75+\uB2E8 \uC74C\uB8CC = \uCC9C\uAD6D)", scores: { W: 1 } },
+      { text: "\uC544\uC544(\uC544\uC774\uC2A4 \uC544\uBA54\uB9AC\uCE74\uB178) \uC544\uB2C8\uBA74 \uADF8\uB0E5 \uBB3C (\uBE75 \uB9DB\uC5D0 \uC9D1\uC911\uD574\uC57C\uC9C0)", scores: { D: 1 } }
+    ] },
+    { text: "\uC778\uC2A4\uD0C0\uC5D0\uC11C \uB09C\uB9AC\uB09C \uC2E0\uC0C1 \uBE75\uC9D1, \uADFC\uB370 \uC6E8\uC774\uD305 1\uC2DC\uAC04\uC774\uB798. \uB2F9\uC2E0\uC758 \uBC18\uC751\uC740?", options: [
+      { text: '"1\uC2DC\uAC04? \u3147\u314B \uC720\uD29C\uBE0C \uBCF4\uBA74\uC11C \uAE30\uB2E4\uB9B0\uB2E4" (\uBA39\uC5B4\uBD10\uC57C \uC9C1\uC131\uC774 \uD480\uB9BC)', scores: { H: 1 } },
+      { text: '"\uC5D0\uC774 \uB2E4\uC74C\uC5D0~ \uC5EC\uAE30 \uADFC\uCC98\uC5D0 \uB9DB\uC788\uB294 \uB370 \uC54C\uC544" (\uC778\uC0DD\uC740 \uD6A8\uC728\uC774\uC57C)', scores: { L: 1 } }
+    ] },
+    { text: "\uC774\uC0AC \uAC04 \uB3D9\uB124\uC5D0 \uBE75\uC9D1\uC774 \uB450 \uACF3! \uC5B4\uB514\uB97C \uB2E8\uACE8\uB85C \uC0BC\uC744\uAE4C?", options: [
+      { text: "\uAD6D\uC0B0\uBC00\uC5D0 \uBE44\uAC74 \uC635\uC158\uB3C4 \uC788\uB294 \uAC74\uAC15 \uC9C0\uD5A5 \uBCA0\uC774\uCEE4\uB9AC (\uB0B4 \uBAB8\uC5D0 \uB4E4\uC5B4\uAC00\uB294 \uAC70\uB2C8\uAE4C)", scores: { N: 1 } },
+      { text: "\uC2DC\uC98C \uD55C\uC815 \uBA54\uB274\uC5D0 \uAC10\uC131 \uB118\uCE58\uB294 \uBD84\uC704\uAE30 \uB9DB\uC9D1 (\uBE75\uB3C4 \uBA39\uACE0 \uD790\uB9C1\uB3C4 \uD558\uACE0)", scores: { J: 1 } }
+    ] },
+    { text: "\uAC11\uC790\uAE30 \uBE75\uC774 \uBA39\uACE0 \uC2F6\uC740 \uBC24 10\uC2DC. \uB2F9\uC2E0\uC758 \uD589\uB3D9\uC740?", options: [
+      { text: "\uC628\uB77C\uC778 \uBCA0\uC774\uCEE4\uB9AC\uC5D0\uC11C \uC8FC\uBB38\uD558\uACE0 \uB0B4\uC77C \uD0DD\uBC30 \uAE30\uB2E4\uB9B0\uB2E4 (\uC9D1\uC5D0\uC11C \uBC1B\uB294 \uAC8C \uCD5C\uACE0)", scores: { Online: 1 } },
+      { text: "\uB0B4\uC77C \uC544\uCE68 \uC77C\uCC0D \uBE75\uC9D1\uC5D0 \uC9C1\uC811 \uAC04\uB2E4 (\uAC13 \uB098\uC628 \uAC78 \uACE8\uB77C\uC57C \uC81C\uB9DB)", scores: { Offline: 1 } }
+    ] },
+    { text: "\uBB34\uC778\uB3C4\uC5D0 \uBE75 \uB531 \uD558\uB098\uB9CC \uAC00\uC838\uAC04\uB2E4\uBA74? (\uC9C4\uC9C0)", options: [
+      { text: "\uD1B5\uBC00 \uAE5C\uBE60\uB274 \u2014 \uAC74\uAC15\uD558\uACE0 \uBC14\uC0AD\uD558\uACE0 \uC624\uB798 \uAC04\uB2E4", scores: { C: 0.5, N: 0.5 } },
+      { text: "\uD604\uBBF8 \uC300\uBE75 \u2014 \uC18D\uC774 \uD3B8\uD558\uACE0 \uBD80\uB4DC\uB7FD\uACE0 \uB4E0\uB4E0\uD558\uB2E4", scores: { S: 0.5, N: 0.5 } },
+      { text: "\uC18C\uAE08\uBE75 \u2014 \uAC89\uBC14\uC18D\uCD09\uC5D0 \uBC84\uD130 \uD48D\uBBF8, \uBB34\uC778\uB3C4\uC5D0\uC11C\uB3C4 \uC990\uACA8\uC57C\uC9C0", scores: { C: 0.5, J: 0.5 } },
+      { text: "\uC0DD\uD06C\uB9BC \uB538\uAE30 \uCF00\uC774\uD06C \u2014 \uC5B4\uCC28\uD53C \uBB34\uC778\uB3C4, \uD589\uBCF5\uD558\uAC8C \uC0B4\uC790", scores: { S: 0.5, J: 0.5 } }
+    ] }
   ];
+  var BBTI_TYPES = {
+    CWHN: { emoji: "\u{1F950}", name: "\uBAA8\uD5D8 \uD06C\uB8E8\uC544\uC0C1", nickname: "\uC758\uC2DD\uB192\uC740 \uD0D0\uD5D8\uAC00", desc: "\uC0C8\uB85C\uC6B4 \uAC74\uAC15 \uB514\uC800\uD2B8\uB97C \uCC3E\uC544\uB2E4\uB2C8\uB294 \uBBF8\uC2DD \uD0D0\uD5D8\uAC00. \uBC14\uC0AD\uD55C \uC2DD\uAC10\uC5D0 \uAC74\uAC15\uAE4C\uC9C0 \uB193\uCE58\uC9C0 \uC54A\uB294 \uB2F9\uC2E0! \uC804\uAD6D \uC5B4\uB514\uB4E0 \uC88B\uC740 \uBE75\uC774 \uC788\uB2E4\uBA74 \uB2EC\uB824\uAC11\uB2C8\uB2E4.", breads: ["\uD06C\uB8E8\uC544\uC0C1", "\uD1B5\uBC00\uC2A4\uCF58", "\uADC0\uB9AC\uCFE0\uD0A4", "\uACAC\uACFC\uB958\uD0C0\uB974\uD2B8"] },
+    CWLN: { emoji: "\u{1F950}", name: "\uAC74\uAC15 \uD06C\uB8E8\uC544\uC0C1", nickname: "\uB2E8\uACE8\uC9D1 \uAC74\uAC15\uB7EC", desc: "\uAC74\uAC15\uD55C \uB514\uC800\uD2B8\uB97C \uD30C\uB294 \uB2E8\uACE8\uC9D1\uC774 \uC788\uB294 \uAFB8\uC900\uD55C \uC0AC\uB78C. \uC774\uBBF8 \uCC3E\uC740 \uCD5C\uC560 \uBE75\uC9D1\uC5D0\uC11C \uBC14\uC0AD\uD558\uACE0 \uAC74\uAC15\uD55C \uD589\uBCF5\uC744 \uB204\uB824\uC694.", breads: ["\uC720\uAE30\uB18D\uD06C\uB8E8\uC544\uC0C1", "\uD1B5\uBC00\uC2A4\uCF58", "\uC624\uD2B8\uCFE0\uD0A4", "\uD638\uBC00\uCF00\uC774\uD06C"] },
+    CWHJ: { emoji: "\u{1F9C7}", name: "\uD2B8\uB80C\uB4DC \uC640\uD50C", nickname: "\uD56B\uD50C \uD5CC\uD130", desc: "SNS \uD56B\uD50C \uB514\uC800\uD2B8 \uB9DB\uC9D1\uC740 \uB2E4 \uAFF0\uACE0 \uC788\uB294 \uD2B8\uB80C\uB4DC\uC138\uD130. \uBC14\uC0AD\uD55C \uC2E0\uBA54\uB274\uAC00 \uB098\uC624\uBA74 \uAC00\uC7A5 \uBA3C\uC800 \uB2EC\uB824\uAC00\uB294 \uC0AC\uB78C!", breads: ["\uD06C\uB8E8\uC544\uC0C1", "\uC18C\uAE08\uBE75", "\uC5D0\uADF8\uD0C0\uB974\uD2B8", "\uAE4C\uB20C\uB808"] },
+    CWLJ: { emoji: "\u{1F36A}", name: "\uD3B8\uC548\uD55C \uCFE0\uD0A4", nickname: "\uB2EC\uCF64\uD55C \uC77C\uC0C1\uB7EC", desc: "\uC88B\uC544\uD558\uB294 \uB514\uC800\uD2B8 \uCE74\uD398\uC5D0\uC11C \uBC14\uC0AD\uB2EC\uCF64\uD55C \uD589\uBCF5\uC744 \uCC3E\uB294 \uC0AC\uB78C. \uB298 \uAC00\uB358 \uADF8 \uC790\uB9AC, \uB298 \uC2DC\uD0A4\uB358 \uADF8 \uBA54\uB274\uAC00 \uCD5C\uACE0!", breads: ["\uCFE0\uD0A4", "\uC5D0\uADF8\uD0C0\uB974\uD2B8", "\uC18C\uAE08\uBE75", "\uD53C\uB0AD\uC2DC\uC5D0"] },
+    CDHN: { emoji: "\u{1F956}", name: "\uD0D0\uD5D8 \uBC14\uAC8C\uD2B8", nickname: "\uC7A5\uC778 \uBC1C\uAD74\uB2E8", desc: "\uC9C4\uC9DC \uB9DB\uC788\uB294 \uBC14\uAC8C\uD2B8\uB97C \uCC3E\uC544 \uC804\uAD6D\uC744 \uB204\uBE44\uB294 \uBE75 \uC7A5\uC778. \uAC74\uAC15\uD55C \uC2DD\uC0AC\uBE75\uC758 \uC138\uACC4\uB294 \uB05D\uC774 \uC5C6\uC8E0!", breads: ["\uBC14\uAC8C\uD2B8", "\uAE5C\uBE60\uB274", "\uC0AC\uC6CC\uB3C4\uC6B0", "\uD1B5\uBC00\uCE58\uC544\uBC14\uD0C0"] },
+    CDLN: { emoji: "\u{1F956}", name: "\uD074\uB798\uC2DD \uBC14\uAC8C\uD2B8", nickname: "\uB3D9\uB124 \uBC14\uAC8C\uD2B8 \uC7A5\uC778", desc: "\uB3D9\uB124 \uBE75\uC9D1\uC758 \uB4E0\uB4E0\uD55C \uC2DD\uC0AC\uBE75 \uB9C8\uB2C8\uC544. \uB9E4\uC77C \uC544\uCE68 \uAC19\uC740 \uBE75\uC9D1\uC5D0\uC11C \uAC74\uAC15\uD558\uACE0 \uB2F4\uBC31\uD55C \uD55C \uB07C\uB97C \uC2DC\uC791\uD569\uB2C8\uB2E4.", breads: ["\uBC14\uAC8C\uD2B8", "\uCE58\uC544\uBC14\uD0C0", "\uD638\uBC00\uBE75", "\uCC9C\uC5F0\uBC1C\uD6A8\uC2DD\uBE75"] },
+    CDHJ: { emoji: "\u{1F968}", name: "\uC2E0\uC0C1 \uD504\uB808\uCCBC", nickname: "\uBCA0\uC774\uCEE4\uB9AC \uD22C\uC5B4\uB7EC", desc: "\uAC10\uC131 \uB118\uCE58\uB294 \uC0C8 \uBE75\uC9D1 \uD0D0\uBC29\uC774 \uCDE8\uBBF8\uC778 \uC0AC\uB78C. \uBC14\uC0AD\uD55C \uC2DD\uC0AC\uBE75\uACFC \uC88B\uC740 \uBD84\uC704\uAE30, \uB458 \uB2E4 \uB193\uCE60 \uC218 \uC5C6\uC5B4!", breads: ["\uD504\uB808\uCCBC", "\uD3EC\uCE74\uCE58\uC544", "\uC18C\uAE08\uBE75", "\uC62C\uB9AC\uBE0C\uBC14\uAC8C\uD2B8"] },
+    CDLJ: { emoji: "\u{1FAD3}", name: "\uC18C\uBC15\uD55C \uCE58\uC544\uBC14\uD0C0", nickname: "\uC544\uCE68\uBE75 \uB8E8\uD2F4\uB7EC", desc: "\uB9E4\uC77C \uC544\uCE68 \uAC19\uC740 \uBE75\uC9D1\uC5D0\uC11C \uC2DD\uC0AC\uBE75 \uC0AC\uB294 \uB8E8\uD2F4\uB7EC. \uB2F4\uBC31\uD55C \uBE75 \uD55C \uC870\uAC01\uC774 \uD558\uB8E8\uC758 \uC2DC\uC791!", breads: ["\uCE58\uC544\uBC14\uD0C0", "\uC2DD\uBE75", "\uBCA0\uC774\uAE00", "\uD3EC\uCE74\uCE58\uC544"] },
+    SWHN: { emoji: "\u{1F9C1}", name: "\uD0D0\uAD6C \uCEF5\uCF00\uC774\uD06C", nickname: "\uBE44\uAC74 \uB514\uC800\uD2B8 \uD0D0\uD5D8\uAC00", desc: "\uAC74\uAC15\uD55C \uB514\uC800\uD2B8\uC758 \uC0C8 \uC9C0\uD3C9\uC744 \uC5EC\uB294 \uAC1C\uCC99\uC790. \uBD80\uB4DC\uB7FD\uACE0 \uB2EC\uCF64\uD558\uBA74\uC11C\uB3C4 \uBAB8\uC5D0 \uC88B\uC740 \uBE75\uC744 \uCC3E\uC544 \uD5E4\uB9E4\uC694.", breads: ["\uBE44\uAC74\uCF00\uC774\uD06C", "\uC300\uCE74\uC2A4\uD14C\uB77C", "\uB450\uBD80\uD06C\uB9BC\uBE75", "\uB2F9\uADFC\uCF00\uC774\uD06C"] },
+    SWLN: { emoji: "\u{1F370}", name: "\uC815\uC9C1\uD55C \uCF00\uC774\uD06C", nickname: "\uAC74\uAC15 \uB2E8\uACE8\uB7EC", desc: "\uBBFF\uC744 \uC218 \uC788\uB294 \uAC74\uAC15 \uB514\uC800\uD2B8 \uCE74\uD398\uC758 \uB2E8\uACE8. \uBD80\uB4DC\uB7FD\uACE0 \uB2EC\uCF64\uD558\uC9C0\uB9CC \uAC74\uAC15\uD55C \uADF8 \uB9DB, \uC774\uBBF8 \uCC3E\uC558\uC5B4\uC694.", breads: ["\uC300\uCF00\uC774\uD06C", "\uC800\uB2F9\uB9C8\uCE74\uB871", "\uC720\uAE30\uB18D\uBA38\uD540", "\uBE44\uAC74\uD0C0\uB974\uD2B8"] },
+    SWHJ: { emoji: "\u{1F370}", name: "\uD30C\uD2F0 \uCF00\uC774\uD06C", nickname: "\uCF00\uC774\uD06C \uC218\uC9D1\uAC00", desc: "\uC608\uC058\uACE0 \uB9DB\uC788\uB294 \uCF00\uC774\uD06C\uB77C\uBA74 \uC5B4\uB514\uB4E0 \uB2EC\uB824\uAC00\uB294 \uC0AC\uB78C. \uBD80\uB4DC\uB7FD\uACE0 \uB2EC\uCF64\uD55C \uAC83\uC5D0 \uC9C4\uC2EC\uC778 \uB2F9\uC2E0!", breads: ["\uC0DD\uD06C\uB9BC\uCF00\uC774\uD06C", "\uB9C8\uCE74\uB871", "\uD2F0\uB77C\uBBF8\uC218", "\uB538\uAE30\uD0C0\uB974\uD2B8"] },
+    SWLJ: { emoji: "\u{1F369}", name: "\uD589\uBCF5\uD55C \uB3C4\uB11B", nickname: "\uB3D9\uB124 \uB514\uC800\uD2B8 \uC694\uC815", desc: "\uB2E8\uACE8 \uCE74\uD398\uC758 \uB2EC\uCF64\uD55C \uBA54\uB274\uAC00 \uC77C\uC0C1\uC758 \uD589\uBCF5\uC778 \uC0AC\uB78C. \uB298 \uAC00\uB358 \uADF8\uACF3\uC5D0\uC11C \uC624\uB298\uB3C4 \uD3ED\uC2E0\uD55C \uD589\uBCF5 \uCDA9\uC804!", breads: ["\uB3C4\uB11B", "\uD06C\uB9BC\uBE75", "\uC559\uBC84\uD130", "\uC288\uD06C\uB9BC"] },
+    SDHN: { emoji: "\u{1F35E}", name: "\uD0D0\uD5D8 \uC2DD\uBE75", nickname: "\uAC74\uAC15\uBE75 \uC5EC\uD589\uC790", desc: "\uC804\uAD6D \uD1B5\uBC00\uBE75, \uC300\uBE75 \uB9DB\uC9D1\uC744 \uCC3E\uC544\uB2E4\uB2C8\uB294 \uAC74\uAC15\uD30C. \uBD80\uB4DC\uB7FD\uACE0 \uB2F4\uBC31\uD55C \uAC74\uAC15\uBE75\uC758 \uC138\uACC4\uB97C \uD0D0\uD5D8 \uC911!", breads: ["\uD1B5\uBC00\uC2DD\uBE75", "\uC300\uBE75", "\uD604\uBBF8\uBE75", "\uC720\uAE30\uB18D\uC2DD\uBE75"] },
+    SDLN: { emoji: "\u{1F35E}", name: "\uB4E0\uB4E0\uD55C \uC2DD\uBE75", nickname: "\uAC74\uAC15\uD55C \uC544\uCE68\uD615 \uC778\uAC04", desc: "\uB9E4\uC77C \uAC19\uC740 \uAC74\uAC15\uBE75\uC73C\uB85C \uD558\uB8E8\uB97C \uC5EC\uB294 \uC0AC\uB78C. \uBD80\uB4DC\uB7FD\uACE0 \uB2F4\uBC31\uD55C \uD55C \uB07C\uAC00 \uB098\uC758 \uB8E8\uD2F4!", breads: ["\uC2DD\uBE75", "\uBAA8\uB2DD\uBE75", "\uD1B5\uBC00\uB864", "\uC300\uC2DD\uBE75"] },
+    SDHJ: { emoji: "\u{1F95E}", name: "\uC2E0\uB098\uB294 \uD32C\uCF00\uC774\uD06C", nickname: "\uBE0C\uB7F0\uCE58 \uB7EC\uBC84", desc: "\uAC10\uC131 \uB118\uCE58\uB294 \uBE0C\uB7F0\uCE58 \uCE74\uD398\uB97C \uC0AC\uB791\uD558\uB294 \uC0AC\uB78C. \uBD80\uB4DC\uB7EC\uC6B4 \uBE75\uACFC \uC88B\uC740 \uBD84\uC704\uAE30\uAC00 \uB9CC\uB098\uBA74 \uC644\uBCBD\uD55C \uC8FC\uB9D0!", breads: ["\uD32C\uCF00\uC774\uD06C", "\uBE0C\uB9AC\uC624\uC288", "\uBCA0\uC774\uAE00\uC0CC\uB4DC\uC704\uCE58", "\uBAA8\uB2DD\uBE75"] },
+    SDLJ: { emoji: "\u{1F96F}", name: "\uD3EC\uADFC\uD55C \uBCA0\uC774\uAE00", nickname: "\uD589\uBCF5\uD55C \uB2E8\uD325\uBE75", desc: "\uB298 \uAC00\uB358 \uBE75\uC9D1\uC758 \uD3EC\uADFC\uD55C \uB9DB\uC774 \uC88B\uC740 \uC0AC\uB78C. \uB2F4\uBC31\uD558\uACE0 \uBD80\uB4DC\uB7EC\uC6B4 \uADF8 \uBE75\uC774 \uC624\uB298\uB3C4 \uB098\uB97C \uAE30\uB2E4\uB824\uC694.", breads: ["\uBCA0\uC774\uAE00", "\uB2E8\uD325\uBE75", "\uC6B0\uC720\uC2DD\uBE75", "\uBAA8\uCC0C\uBE75"] }
+  };
+  var BBTI_BAKERIES = [
+    { name: "\uBC00\uB3C4", region: "\uC11C\uC6B8 \uB9C8\uD3EC\uAD6C", type: "offline", tags: ["\uCC9C\uC5F0\uBC1C\uD6A8", "\uAD6D\uC0B0\uBC00", "SNS\uC778\uAE30", "\uC6E8\uC774\uD305\uB9DB\uC9D1"], texture: "crunchy", taste: "dough", waiting: true, menu: ["\uD1B5\uBC00\uBC14\uAC8C\uD2B8", "\uAE5C\uBE60\uB274", "\uC62C\uB9AC\uBE0C\uD3EC\uCE74\uCE58\uC544"] },
+    { name: "\uB7F0\uB358\uBCA0\uC774\uAE00\uBBA4\uC9C0\uC5C4", region: "\uC11C\uC6B8 \uC885\uB85C\uAD6C", type: "offline", tags: ["SNS\uC778\uAE30", "\uC6E8\uC774\uD305\uB9DB\uC9D1", "\uAC10\uC131\uC778\uD14C\uB9AC\uC5B4"], texture: "soft", taste: "both", waiting: true, menu: ["\uD50C\uB808\uC778\uBCA0\uC774\uAE00", "\uD06C\uB9BC\uCE58\uC988\uBCA0\uC774\uAE00", "\uBCA0\uC774\uAE00\uC0CC\uB4DC\uC704\uCE58"] },
+    { name: "\uACF3\uAC04", region: "\uC628\uB77C\uC778", type: "online", tags: ["\uBE44\uAC74", "\uAE00\uB8E8\uD150\uD504\uB9AC", "\uC120\uBB3C\uD3EC\uC7A5"], texture: "crunchy", taste: "sweet", waiting: false, menu: ["\uBE44\uAC74\uCFE0\uD0A4", "\uADF8\uB798\uB180\uB77C", "\uC624\uD2B8\uBC14"] },
+    { name: "\uB098\uD3F4\uB808\uC639\uACFC\uC790\uC810", region: "\uBD80\uC0B0 \uC911\uAD6C", type: "offline", tags: ["\uC804\uD1B5"], texture: "soft", taste: "sweet", waiting: false, menu: ["\uB098\uD3F4\uB808\uC639\uD30C\uC774", "\uB538\uAE30\uCF00\uC774\uD06C", "\uB9C8\uB4E4\uB80C"] },
+    { name: "\uD14C\uB514\uBD48\uC774\uB85C", region: "\uC11C\uC6B8 \uC131\uC218", type: "offline", tags: ["\uD504\uB791\uC2A4\uC2DD", "SNS\uC778\uAE30", "\uAC10\uC131\uC778\uD14C\uB9AC\uC5B4"], texture: "crunchy", taste: "both", waiting: true, menu: ["\uD06C\uB8E8\uC544\uC0C1", "\uBC14\uAC8C\uD2B8", "\uAE5C\uBE60\uB274"] },
+    { name: "\uBE0C\uB808\uB4DC05", region: "\uC11C\uC6B8 \uC6A9\uC0B0\uAD6C", type: "offline", tags: ["\uC720\uAE30\uB18D", "\uD504\uB791\uC2A4\uC2DD"], texture: "crunchy", taste: "dough", waiting: false, menu: ["\uC720\uAE30\uB18D\uD06C\uB8E8\uC544\uC0C1", "\uC2A4\uCF58", "\uAE4C\uB20C\uB808"] },
+    { name: "\uAC74\uAC15\uD55C\uBE75\uC9D1", region: "\uC81C\uC8FC", type: "both", tags: ["\uBE44\uAC74", "\uC800\uB2F9", "\uD1B5\uBC00", "\uBB34\uBC29\uBD80\uC81C"], texture: "soft", taste: "dough", waiting: false, menu: ["\uD1B5\uBC00\uC2DD\uBE75", "\uBE44\uAC74\uBAA8\uB2DD\uBE75", "\uC300\uBE75"] },
+    { name: "\uC62C\uB4DC\uD398\uB9AC\uB3C4\uB11B", region: "\uC11C\uC6B8 \uB9C8\uD3EC\uAD6C", type: "offline", tags: ["\uBE44\uC8FC\uC5BC\uB9DB\uC9D1", "SNS\uC778\uAE30", "\uC2DC\uC98C\uD55C\uC815"], texture: "soft", taste: "sweet", waiting: true, menu: ["\uAE00\uB808\uC774\uC988\uB3C4\uB11B", "\uC2DC\uC98C\uB3C4\uB11B", "\uD06C\uB9BC\uB3C4\uB11B"] },
+    { name: "\uC18C\uAE08\uBE75\uC5F0\uAD6C\uC18C", region: "\uC628\uB77C\uC778", type: "online", tags: ["\uC120\uBB3C\uD3EC\uC7A5", "SNS\uC778\uAE30"], texture: "crunchy", taste: "dough", waiting: false, menu: ["\uC624\uB9AC\uC9C0\uB110\uC18C\uAE08\uBE75", "\uD06C\uB9BC\uC18C\uAE08\uBE75", "\uB9C8\uB298\uC18C\uAE08\uBE75"] },
+    { name: "\uCE74\uD398\uB808\uC774\uC5B4\uB4DC", region: "\uC11C\uC6B8 \uC131\uC218", type: "offline", tags: ["\uAC10\uC131\uC778\uD14C\uB9AC\uC5B4", "SNS\uC778\uAE30", "\uBE44\uC8FC\uC5BC\uB9DB\uC9D1"], texture: "soft", taste: "sweet", waiting: true, menu: ["\uC2DC\uC98C\uCF00\uC774\uD06C", "\uD0C0\uB974\uD2B8", "\uC2A4\uCF58"] },
+    { name: "\uBE44\uAC74\uBE75\uC9D1 \uD50C\uB79C\uC787", region: "\uC628\uB77C\uC778", type: "online", tags: ["\uBE44\uAC74", "\uAE00\uB8E8\uD150\uD504\uB9AC", "\uC800\uB2F9", "\uC120\uBB3C\uD3EC\uC7A5"], texture: "both", taste: "both", waiting: false, menu: ["\uBE44\uAC74\uCD08\uCF54\uCF00\uC774\uD06C", "\uAE00\uB8E8\uD150\uD504\uB9AC\uCFE0\uD0A4", "\uBE44\uAC74\uC2DD\uBE75"] },
+    { name: "\uC559\uBC84\uD130\uC0B4\uB871", region: "\uC11C\uC6B8 \uAC15\uB0A8\uAD6C", type: "offline", tags: ["SNS\uC778\uAE30", "\uC2DC\uC98C\uD55C\uC815", "\uCF5C\uB77C\uBCF4\uBA54\uB274"], texture: "crunchy", taste: "sweet", waiting: true, menu: ["\uC559\uBC84\uD130", "\uD06C\uB8E8\uC544\uC0C1", "\uC2DC\uC98C\uC559\uBC84\uD130"] },
+    { name: "\uB974\uBC45\uBCA0\uC774\uCEE4\uB9AC", region: "\uBD80\uC0B0 \uD574\uC6B4\uB300\uAD6C", type: "offline", tags: ["\uCC9C\uC5F0\uBC1C\uD6A8", "\uB974\uBC45\uC885", "\uD504\uB791\uC2A4\uC2DD"], texture: "crunchy", taste: "dough", waiting: false, menu: ["\uB974\uBC45\uBC14\uAC8C\uD2B8", "\uC0AC\uC6CC\uB3C4\uC6B0", "\uD638\uBC00\uBE75"] },
+    { name: "\uB69C\uB808\uC96C\uB974 \uAC74\uAC15\uBE75 \uB77C\uC778", region: "\uC804\uAD6D", type: "both", tags: ["\uC800\uB2F9", "\uD1B5\uBC00", "\uBB34\uBC29\uBD80\uC81C"], texture: "soft", taste: "dough", waiting: false, menu: ["\uC800\uB2F9\uC2DD\uBE75", "\uD1B5\uBC00\uBAA8\uB2DD\uBE75", "\uADC0\uB9AC\uBE75"] }
+  ];
+  function getBbtiCode(scores) {
+    return (scores.C >= scores.S ? "C" : "S") + (scores.W >= scores.D ? "W" : "D") + (scores.H >= scores.L ? "H" : "L") + (scores.N >= scores.J ? "N" : "J");
+  }
+  function matchBbtiBakeries(code, scores) {
+    const tF = code[0] === "C" ? "crunchy" : "soft";
+    const taF = code[1] === "W" ? "sweet" : "dough";
+    const isN = code[3] === "N", isJ = code[3] === "J";
+    const prefOnline = (scores.Online || 0) > (scores.Offline || 0);
+    const hTags = ["\uBE44\uAC74", "\uAE00\uB8E8\uD150\uD504\uB9AC", "\uC800\uB2F9", "\uB178\uBC84\uD130", "\uB178\uC124\uD0D5", "\uB11B\uCE20\uD504\uB9AC", "\uC720\uAE30\uB18D", "\uBB34\uBC29\uBD80\uC81C", "\uB77D\uD1A0\uD504\uB9AC"];
+    const jTags = ["SNS\uC778\uAE30", "\uC2DC\uC98C\uD55C\uC815", "\uBE44\uC8FC\uC5BC\uB9DB\uC9D1", "\uAC10\uC131\uC778\uD14C\uB9AC\uC5B4", "\uC120\uBB3C\uD3EC\uC7A5", "\uC6E8\uC774\uD305\uB9DB\uC9D1", "\uBBF8\uB514\uC5B4\uCD9C\uC5F0", "\uCF5C\uB77C\uBCF4\uBA54\uB274"];
+    return BBTI_BAKERIES.map((b) => {
+      let s = 0;
+      if (b.texture === tF || b.texture === "both") s += 3;
+      if (b.taste === taF || b.taste === "both") s += 3;
+      if (isN && b.tags.some((t) => hTags.includes(t))) s += 2;
+      if (isJ && b.tags.some((t) => jTags.includes(t))) s += 2;
+      if (prefOnline && (b.type === "online" || b.type === "both")) s += 1;
+      if (!prefOnline && (b.type === "offline" || b.type === "both")) s += 1;
+      if (code[2] === "H" && b.waiting) s += 1;
+      if (code[2] === "L" && !b.waiting) s += 1;
+      return { ...b, s };
+    }).sort((a, b) => b.s - a.s).slice(0, 4);
+  }
   var DEFAULT_TASTE_PROFILE = {
-    bread_role: "both",
-    visit_style: "offline",
+    bbtiCode: null,
+    bbtiType: null,
     favorites: ["\uD0C0\uB974\uD2B8", "\uD06C\uB8E8\uC544\uC0C1", "\uC0AC\uC6CC\uB3C4\uC6B0"],
-    budget: "5to8k",
     areas: ["\uC11C\uC6B8"],
-    lifestyle: "explorer",
     _areaDetails: ["\uC11C\uC6B8 \uB9C8\uD3EC\uAD6C", "\uC11C\uC6B8 \uC11C\uB300\uBB38\uAD6C"],
     recent: ["\uACE0\uBBF8\uB514\uC800\uD2B8", "\uC545\uD1A0\uBC84 \uBCA0\uC774\uCEE4\uB9AC"]
   };
@@ -23143,7 +23148,7 @@ input, textarea, button { font-family: inherit; }
       ] }, a.label)) }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { padding: "0 16px 16px" }, children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 8 }, children: [
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { style: { fontSize: 15, fontWeight: 700, color: C.text, margin: 0 }, children: "\u{1F49D} \uB0B4 \uBE75 \uCDE8\uD5A5" }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { style: { fontSize: 15, fontWeight: 700, color: C.text, margin: 0 }, children: "\u{1F9EA} \uB0B4 \uBE75BTI" }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
             "button",
             {
@@ -23151,31 +23156,33 @@ input, textarea, button { font-family: inherit; }
               style: { display: "flex", alignItems: "center", gap: 3, background: C.primaryLight, color: C.primary, border: "none", borderRadius: 20, padding: "5px 12px", fontSize: 11, fontWeight: 700, cursor: "pointer" },
               children: [
                 /* @__PURE__ */ (0, import_jsx_runtime.jsx)(PenLine, { size: 11 }),
-                " \uB2E4\uC2DC \uC870\uC0AC\uD558\uAE30"
+                " \uB2E4\uC2DC \uAC80\uC0AC\uD558\uAE30"
               ]
             }
           )
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { background: C.bgGray, borderRadius: 12, padding: 14 }, children: [
-          (profile.favorites || []).length > 0 ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 8 }, children: (profile.favorites || []).map((f) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { style: { fontSize: 11, fontWeight: 600, color: C.primary, background: "#fff", padding: "4px 10px", borderRadius: 99, border: `1px solid ${C.primary}30` }, children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { background: C.bgGray, borderRadius: 12, padding: 14 }, children: profile.bbtiCode && profile.bbtiType ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { display: "flex", alignItems: "center", gap: 10, marginBottom: 8 }, children: [
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: 36 }, children: profile.bbtiType.emoji }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 14, fontWeight: 800, color: C.text }, children: profile.bbtiType.name }),
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 12, fontWeight: 700, color: C.primary, letterSpacing: 2 }, children: profile.bbtiCode }),
+              /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { fontSize: 11, color: C.textSec }, children: [
+                '"',
+                profile.bbtiType.nickname,
+                '"'
+              ] })
+            ] })
+          ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { display: "flex", flexWrap: "wrap", gap: 6 }, children: (profile.favorites || []).map((f) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { style: { fontSize: 11, fontWeight: 600, color: C.primary, background: "#fff", padding: "4px 10px", borderRadius: 99, border: `1px solid ${C.primary}30` }, children: [
             "#",
             f
-          ] }, f)) }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 12, color: C.textSec, marginBottom: 8 }, children: "\uC544\uC9C1 \uCDE8\uD5A5\uC774 \uC124\uC815\uB418\uC9C0 \uC54A\uC558\uC5B4\uC694" }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { display: "flex", flexWrap: "wrap", gap: 10, fontSize: 11, color: C.textSec }, children: [
-            profile.bread_role && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [
-              "\u{1F35E} ",
-              profile.bread_role === "meal" ? "\uC2DD\uC0AC\uBE75\uD30C" : profile.bread_role === "dessert" ? "\uB514\uC800\uD2B8\uBE75\uD30C" : "\uB458 \uB2E4 \uC0AC\uB791"
-            ] }),
-            profile.visit_style && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [
-              "\u{1F950} ",
-              profile.visit_style === "offline" ? "\uC624\uD504\uB77C\uC778 \uC120\uD638" : profile.visit_style === "online" ? "\uC628\uB77C\uC778 \uC120\uD638" : "\uC0C1\uD669 \uB530\uB77C"
-            ] }),
-            profile.lifestyle && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [
-              "\u{1F525} ",
-              { explorer: "\uD0D0\uD5D8\uAC00\uD615", loyal: "\uB2E8\uACE8\uD30C", trendy: "\uD2B8\uB80C\uB4DC\uC138\uD130", treasure: "\uBCF4\uC11D \uBC1C\uAD74\uB7EC" }[profile.lifestyle]
-            ] })
-          ] })
-        ] })
+          ] }, f)) })
+        ] }) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { textAlign: "center", padding: "8px 0" }, children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 28, marginBottom: 4 }, children: "\u{1F35E}" }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 12, color: C.textSec }, children: "\uC544\uC9C1 \uBE75BTI \uAC80\uC0AC\uB97C \uD558\uC9C0 \uC54A\uC558\uC5B4\uC694" }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: onOpenSurvey, style: { marginTop: 8, background: C.primary, color: "#fff", border: "none", borderRadius: 10, padding: "8px 16px", fontSize: 12, fontWeight: 700, cursor: "pointer" }, children: "\uAC80\uC0AC\uD558\uAE30" })
+        ] }) })
       ] }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { padding: "0 16px 12px" }, children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { style: { fontSize: 15, fontWeight: 700, marginBottom: 8, color: C.text }, children: "\uB4F1\uAE09 \uC548\uB0B4" }),
@@ -23711,219 +23718,176 @@ input, textarea, button { font-family: inherit; }
     ] });
   }
   function TasteSurveyModal({ isFirstTime, existingProfile, onClose, onComplete }) {
-    const [step, setStep] = (0, import_react4.useState)(isFirstTime ? 0 : 1);
-    const [answers, setAnswers] = (0, import_react4.useState)(() => {
-      const base = { bread_role: null, visit_style: null, favorites: [], budget: null, areas: [], lifestyle: null };
-      return existingProfile ? { ...base, ...existingProfile } : base;
-    });
-    const totalSteps = SURVEY_QUESTIONS.length;
-    const isIntro = step === 0;
-    const isDone = step === totalSteps + 1;
-    const questionIdx = step - 1;
-    const currentQ = !isIntro && !isDone ? SURVEY_QUESTIONS[questionIdx] : null;
-    const currentAns = currentQ ? answers[currentQ.key] : null;
-    const canProceed = currentQ ? currentQ.multi ? (currentAns || []).length > 0 : !!currentAns : true;
-    const selectOption = (value) => {
-      if (!currentQ) return;
-      if (currentQ.multi) {
-        setAnswers((a) => {
-          const list = a[currentQ.key] || [];
-          return { ...a, [currentQ.key]: list.includes(value) ? list.filter((v) => v !== value) : [...list, value] };
-        });
-      } else {
-        setAnswers((a) => ({ ...a, [currentQ.key]: value }));
-        setTimeout(() => setStep((s) => s + 1), 200);
-      }
+    const [phase, setPhase] = (0, import_react4.useState)(isFirstTime ? "intro" : "quiz");
+    const [currentQ, setCurrentQ] = (0, import_react4.useState)(0);
+    const [scores, setScores] = (0, import_react4.useState)({ C: 0, S: 0, W: 0, D: 0, H: 0, L: 0, N: 0, J: 0, Online: 0, Offline: 0 });
+    const [selected, setSelected] = (0, import_react4.useState)(null);
+    const [resultCode, setResultCode] = (0, import_react4.useState)(null);
+    const [resultBakeries, setResultBakeries] = (0, import_react4.useState)([]);
+    const [loadingText, setLoadingText] = (0, import_react4.useState)("\uB2F9\uC2E0\uC758 \uBE75 \uCDE8\uD5A5\uC744 \uAD7D\uACE0 \uC788\uC5B4\uC694");
+    const totalQ = BBTI_QUESTIONS.length;
+    const selectOption = (idx) => {
+      if (selected !== null) return;
+      setSelected(idx);
+      const q = BBTI_QUESTIONS[currentQ];
+      const newScores = { ...scores };
+      Object.entries(q.options[idx].scores).forEach(([k, v]) => {
+        newScores[k] = (newScores[k] || 0) + v;
+      });
+      setScores(newScores);
+      setTimeout(() => {
+        setSelected(null);
+        if (currentQ + 1 >= totalQ) {
+          setPhase("loading");
+          const code = getBbtiCode(newScores);
+          const bakeries = matchBbtiBakeries(code, newScores);
+          setResultCode(code);
+          setResultBakeries(bakeries);
+          const texts = ["\uBE75 \uBC18\uC8FD \uC911...", "\uC624\uBE10\uC5D0 \uB123\uB294 \uC911...", "\uB178\uB987\uB178\uB987 \uAD7D\uB294 \uC911...", "\uC644\uC131!"];
+          let i = 0;
+          const iv = setInterval(() => {
+            i++;
+            if (i < texts.length) setLoadingText(texts[i]);
+          }, 650);
+          setTimeout(() => {
+            clearInterval(iv);
+            setPhase("result");
+          }, 2600);
+        } else {
+          setCurrentQ((c) => c + 1);
+        }
+      }, 350);
     };
-    const next = () => setStep((s) => s + 1);
-    const prev = () => setStep((s) => Math.max(isFirstTime ? 0 : 1, s - 1));
-    const finish = () => onComplete && onComplete(answers);
+    const restart = () => {
+      setPhase("quiz");
+      setCurrentQ(0);
+      setScores({ C: 0, S: 0, W: 0, D: 0, H: 0, L: 0, N: 0, J: 0, Online: 0, Offline: 0 });
+      setSelected(null);
+      setResultCode(null);
+    };
+    const finish = () => {
+      const code = resultCode || getBbtiCode(scores);
+      const type2 = BBTI_TYPES[code];
+      onComplete && onComplete({ bbtiCode: code, bbtiType: type2, favorites: type2.breads, areas: ["\uC11C\uC6B8"] });
+    };
+    const type = resultCode ? BBTI_TYPES[resultCode] : null;
     return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { position: "absolute", inset: 0, background: C.bg, zIndex: 50, display: "flex", flexDirection: "column" }, children: [
-      !isIntro && !isDone && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { padding: "52px 20px 0", flexShrink: 0 }, children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 10 }, children: [
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: prev, style: { background: "none", border: "none", cursor: "pointer", visibility: step > (isFirstTime ? 0 : 1) ? "visible" : "hidden" }, children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowLeft, { size: 22, color: C.text }) }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { style: { fontSize: 12, fontWeight: 700, color: C.textSec }, children: [
-            step,
-            " / ",
-            totalSteps
-          ] }),
-          !isFirstTime ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: onClose, style: { background: "none", border: "none", cursor: "pointer" }, children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(X, { size: 22, color: C.text }) }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { width: 22 } })
+      phase === "intro" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { flex: 1, display: "flex", flexDirection: "column", padding: "60px 24px 28px", textAlign: "center", overflow: "auto" }, children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { background: C.primaryLight, color: C.primary, fontSize: 12, fontWeight: 700, padding: "6px 14px", borderRadius: 20, display: "inline-block", margin: "0 auto 20px" }, children: "\u{1F9EA} \uBE75BTI \uAC80\uC0AC" }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 64, marginBottom: 16 }, children: "\u{1F35E}" }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { fontSize: 24, fontWeight: 800, lineHeight: 1.4, marginBottom: 12 }, children: [
+          "\uB098\uC758 \uBE75 \uC720\uD615\uC740",
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
+          "\uBB34\uC5C7\uC77C\uAE4C?"
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { height: 5, background: C.bgGray, borderRadius: 3, overflow: "hidden" }, children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { height: "100%", background: `linear-gradient(90deg, ${C.primary}, #EC4899)`, borderRadius: 3, width: `${step / totalSteps * 100}%`, transition: "width 0.3s" } }) })
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { style: { fontSize: 14, color: C.textSec, lineHeight: 1.6, marginBottom: 28 }, children: [
+          "10\uAC1C\uC758 \uC9C8\uBB38\uC73C\uB85C \uC54C\uC544\uBCF4\uB294 \uB098\uC758 \uBE75 \uCDE8\uD5A5.",
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
+          "\uCDE8\uD5A5\uC5D0 \uB531 \uB9DE\uB294 \uBE75\uC9D1\uC744 \uCD94\uCC9C\uD574\uB4DC\uB824\uC694!"
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginBottom: 28 }, children: [{ e: "\u{1F950}", l: "\uBC14\uC0AD vs \uD3ED\uC2E0" }, { e: "\u{1F370}", l: "\uB2EC\uCF64 vs \uB2F4\uBC31" }, { e: "\u{1F5FA}\uFE0F", l: "\uD0D0\uD5D8 vs \uB2E8\uACE8" }, { e: "\u{1F33F}", l: "\uAC74\uAC15 vs \uD589\uBCF5" }].map((ax) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { background: C.primaryLight, borderRadius: 12, padding: "14px 12px", textAlign: "center" }, children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 22, marginBottom: 4 }, children: ax.e }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 12, fontWeight: 600, color: C.text }, children: ax.l })
+        ] }, ax.l)) }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { display: "flex", alignItems: "center", justifyContent: "center", gap: 16, marginBottom: 28, fontSize: 12, color: C.textSec }, children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "\u23F1\uFE0F \uC57D 2\uBD84" }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "\u{1F4CA} 16\uAC00\uC9C0 \uC720\uD615" }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "\u{1F3EA} \uB9DE\uCDA4 \uCD94\uCC9C" })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: () => setPhase("quiz"), style: { width: "100%", padding: 16, background: C.primary, color: "#fff", border: "none", borderRadius: 14, fontSize: 15, fontWeight: 800, cursor: "pointer" }, children: "\uAC80\uC0AC \uC2DC\uC791\uD558\uAE30 \u{1F35E}" }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: onClose, style: { marginTop: 12, background: "none", border: "none", color: C.textSec, fontSize: 12, cursor: "pointer" }, children: "\uB098\uC911\uC5D0 \uD560\uAC8C\uC694" })
       ] }),
-      isIntro && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { flex: 1, display: "flex", flexDirection: "column", padding: "80px 28px 28px", textAlign: "center" }, children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 72, marginBottom: 16 }, children: "\u{1F950}" }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 13, fontWeight: 700, color: C.primary, marginBottom: 8, letterSpacing: 1 }, children: "WELCOME TO" }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 28, fontWeight: 900, color: C.text, marginBottom: 4, letterSpacing: -0.5 }, children: "BB.MORNING" }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { style: { fontSize: 14, color: C.textSec, lineHeight: 1.7, margin: "16px 0 28px" }, children: [
-          "\uBE75\uC744 \uC0AC\uB791\uD558\uB294 \uB2F9\uC2E0\uC744 \uC704\uD574",
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("b", { style: { color: C.text }, children: "\uCDE8\uD5A5 \uC800\uACA9 \uBE75\uC9D1" }),
-          "\uC744 \uCD94\uCC9C\uD574\uB4DC\uB9B4\uAC8C\uC694.",
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { color: C.primary, fontWeight: 700 }, children: "1\uBD84\uC774\uBA74 \uB05D\uB098\uB294" }),
-          " \uAC04\uB2E8\uD55C \uC9C8\uBB38 \uBA87 \uAC1C,",
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
-          "\uB300\uB2F5\uD574\uC8FC\uC2E4\uB798\uC694?"
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { background: C.primaryLight, borderRadius: 14, padding: "14px 16px", marginBottom: "auto", textAlign: "left" }, children: [
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 12, fontWeight: 700, color: C.primary, marginBottom: 4 }, children: "\u2728 \uC124\uBB38 \uC644\uB8CC \uC2DC" }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { fontSize: 12, color: C.text, lineHeight: 1.5 }, children: [
-            "\xB7 \uD65C\uB3D9\uC9C0\uC218 ",
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("b", { children: "+15\uC810" }),
-            " \uC801\uB9BD",
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
-            "\xB7 \uCDE8\uD5A5 \uAE30\uBC18 \uB9DE\uCDA4 \uCD94\uCC9C",
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
-            "\xB7 \uB098\uC5D0\uAC8C \uB9DE\uB294 \uBE75\uC9D1 \uC790\uB3D9 \uD544\uD130\uB9C1"
-          ] })
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
-          "button",
-          {
-            onClick: () => setStep(1),
-            style: { width: "100%", padding: "16px 0", borderRadius: 14, border: "none", background: C.primary, color: "#fff", fontSize: 15, fontWeight: 800, cursor: "pointer", marginTop: 20 },
-            children: "\uCDE8\uD5A5 \uC870\uC0AC \uC2DC\uC791\uD558\uAE30 \u{1F35E}"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
-          "button",
-          {
-            onClick: onClose,
-            style: { marginTop: 12, background: "none", border: "none", color: C.textSec, fontSize: 12, cursor: "pointer" },
-            children: "\uB098\uC911\uC5D0 \uD560\uAC8C\uC694"
-          }
-        )
-      ] }),
-      currentQ && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { flex: 1, display: "flex", flexDirection: "column", padding: "24px 20px 20px", overflow: "hidden" }, children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { textAlign: "center", marginBottom: 20, flexShrink: 0 }, children: [
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 44, marginBottom: 10 }, children: currentQ.emoji }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { style: { fontSize: 19, fontWeight: 800, color: C.text, margin: "0 0 6px", lineHeight: 1.4 }, children: currentQ.title }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { style: { fontSize: 12, color: C.textSec, margin: 0 }, children: currentQ.sub })
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { flex: 1, overflow: "auto", paddingBottom: 8 }, children: currentQ.key === "favorites" || currentQ.key === "areas" ? (
-          // Grid for emoji chip selections
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 8 }, children: currentQ.options.map((opt) => {
-            const selected = (currentAns || []).includes(opt.value);
-            return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
-              "button",
-              {
-                onClick: () => selectOption(opt.value),
-                style: {
-                  padding: "14px 6px",
-                  borderRadius: 12,
-                  border: selected ? `2px solid ${C.primary}` : `1px solid ${C.border}`,
-                  background: selected ? C.primaryLight : "#fff",
-                  cursor: "pointer",
-                  textAlign: "center",
-                  position: "relative",
-                  transition: "all 0.15s"
-                },
-                children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 26, marginBottom: 4 }, children: opt.emoji }),
-                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 11, fontWeight: 700, color: selected ? C.primary : C.text }, children: opt.value }),
-                  selected && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { position: "absolute", top: 4, right: 4, background: C.primary, width: 16, height: 16, borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center" }, children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Check, { size: 10, color: "#fff" }) })
-                ]
-              },
-              opt.value
-            );
-          }) })
-        ) : (
-          // Card list for single-select
-          currentQ.options.map((opt) => {
-            const selected = currentAns === opt.value;
-            return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
-              "button",
-              {
-                onClick: () => selectOption(opt.value),
-                style: {
-                  width: "100%",
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 14,
-                  padding: "14px 16px",
-                  marginBottom: 10,
-                  borderRadius: 14,
-                  border: selected ? `2px solid ${C.primary}` : `1px solid ${C.border}`,
-                  background: selected ? C.primaryLight : "#fff",
-                  cursor: "pointer",
-                  textAlign: "left",
-                  transition: "all 0.15s"
-                },
-                children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 32, flexShrink: 0 }, children: opt.emoji }),
-                  /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { flex: 1 }, children: [
-                    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 14, fontWeight: 800, color: selected ? C.primary : C.text, marginBottom: 2 }, children: opt.label }),
-                    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 11, color: C.textSec }, children: opt.sub })
-                  ] }),
-                  selected && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { background: C.primary, width: 22, height: 22, borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }, children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Check, { size: 13, color: "#fff" }) })
-                ]
-              },
-              opt.value
-            );
-          })
-        ) }),
-        currentQ.multi && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { flexShrink: 0, paddingTop: 8 }, children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
-          "button",
-          {
-            onClick: step === totalSteps ? next : next,
-            disabled: !canProceed,
-            style: {
-              width: "100%",
-              padding: "14px 0",
-              borderRadius: 14,
-              border: "none",
-              background: canProceed ? C.primary : C.bgGray,
-              color: canProceed ? "#fff" : C.textTer,
-              fontSize: 14,
-              fontWeight: 800,
-              cursor: canProceed ? "pointer" : "default"
-            },
-            children: step === totalSteps ? "\uC644\uB8CC\uD558\uAE30" : `\uB2E4\uC74C (${(currentAns || []).length}\uAC1C \uC120\uD0DD)`
-          }
-        ) })
-      ] }),
-      isDone && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { flex: 1, display: "flex", flexDirection: "column", padding: "80px 28px 28px", textAlign: "center" }, children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 72, marginBottom: 16 }, children: "\u{1F389}" }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 13, fontWeight: 700, color: C.primary, marginBottom: 8, letterSpacing: 1 }, children: "ALL SET!" }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", { style: { fontSize: 24, fontWeight: 900, color: C.text, margin: "0 0 12px", lineHeight: 1.3 }, children: [
-          "\uB2F9\uC2E0\uB9CC\uC758 \uBE75 \uCDE8\uD5A5\uC774",
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
-          "\uC644\uC131\uB410\uC5B4\uC694!"
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { style: { fontSize: 13, color: C.textSec, lineHeight: 1.7, margin: "8px 0 20px" }, children: [
-          "\uC774\uC81C \uD648 \uD654\uBA74\uC758 ",
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("b", { style: { color: C.primary }, children: '"\uCDE8\uD5A5\uC800\uACA9 \uBE75\uC9D1"' }),
-          "\uC5D0\uC11C",
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
-          "\uB2F9\uC2E0\uC5D0\uAC8C \uB531 \uB9DE\uB294 \uBE75\uC9D1\uC744 \uB9CC\uB098\uBCF4\uC138\uC694"
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { background: C.bgGray, borderRadius: 14, padding: 16, marginBottom: "auto", textAlign: "left" }, children: [
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 11, fontWeight: 700, color: C.textSec, marginBottom: 8 }, children: "\uC120\uD0DD\uD55C \uCDE8\uD5A5" }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { display: "flex", flexWrap: "wrap", gap: 6 }, children: (answers.favorites || []).slice(0, 8).map((f) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { style: { fontSize: 11, fontWeight: 600, color: C.primary, background: "#fff", padding: "4px 10px", borderRadius: 99, border: `1px solid ${C.primary}30` }, children: [
-            "#",
-            f
-          ] }, f)) }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { marginTop: 10, display: "flex", gap: 14, fontSize: 11, color: C.textSec }, children: [
-            answers.bread_role && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [
-              "\u{1F35E} ",
-              answers.bread_role === "meal" ? "\uC2DD\uC0AC\uBE75\uD30C" : answers.bread_role === "dessert" ? "\uB514\uC800\uD2B8\uBE75\uD30C" : "\uB458 \uB2E4 \uC0AC\uB791"
+      phase === "quiz" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { flex: 1, display: "flex", flexDirection: "column", padding: "52px 20px 20px", overflow: "hidden" }, children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { flexShrink: 0, marginBottom: 24 }, children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 10 }, children: [
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: () => {
+              if (currentQ > 0) setCurrentQ((c) => c - 1);
+            }, style: { background: "none", border: "none", cursor: "pointer", visibility: currentQ > 0 ? "visible" : "hidden" }, children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowLeft, { size: 22, color: C.text }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { style: { fontSize: 12, fontWeight: 700, color: C.textSec }, children: [
+              currentQ + 1,
+              " / ",
+              totalQ
             ] }),
-            answers.visit_style && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [
-              "\u{1F950} ",
-              answers.visit_style === "offline" ? "\uC624\uD504\uB77C\uC778\uD30C" : answers.visit_style === "online" ? "\uC628\uB77C\uC778\uD30C" : "\uC0C1\uD669\uD30C"
-            ] })
+            !isFirstTime ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: onClose, style: { background: "none", border: "none", cursor: "pointer" }, children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(X, { size: 22, color: C.text }) }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { width: 22 } })
+          ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { height: 4, background: C.bgGray, borderRadius: 2, overflow: "hidden" }, children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { height: "100%", background: C.primary, borderRadius: 2, width: `${(currentQ + 1) / totalQ * 100}%`, transition: "width 0.4s" } }) })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { flex: 1, overflow: "auto" }, children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { display: "flex", alignItems: "center", gap: 6, marginBottom: 20 }, children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { style: { fontSize: 13, fontWeight: 700, color: C.primary }, children: [
+            "Q",
+            currentQ + 1
+          ] }) }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { style: { fontSize: 18, fontWeight: 700, lineHeight: 1.5, marginBottom: 24, color: C.text, wordBreak: "keep-all" }, children: BBTI_QUESTIONS[currentQ].text }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { display: "flex", flexDirection: "column", gap: 10 }, children: BBTI_QUESTIONS[currentQ].options.map((opt, idx) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+            "button",
+            {
+              onClick: () => selectOption(idx),
+              style: {
+                width: "100%",
+                padding: "16px 18px",
+                background: selected === idx ? C.primaryLight : "#fff",
+                border: selected === idx ? `1.5px solid ${C.primary}` : `1.5px solid ${C.border}`,
+                borderRadius: 14,
+                fontSize: 14,
+                color: C.text,
+                textAlign: "left",
+                cursor: "pointer",
+                lineHeight: 1.5,
+                transition: "all 0.2s",
+                wordBreak: "keep-all",
+                fontFamily: "inherit"
+              },
+              children: opt.text
+            },
+            idx
+          )) })
+        ] })
+      ] }),
+      phase === "loading" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { flex: 1, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 28, textAlign: "center" }, children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 64, marginBottom: 24, animation: "spin 2s linear infinite" }, children: "\u{1F950}" }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 17, fontWeight: 700, color: C.text, marginBottom: 8 }, children: "\uBE75 \uC720\uD615 \uBD84\uC11D \uC911..." }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 13, color: C.textSec }, children: loadingText }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("style", { children: `@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }` })
+      ] }),
+      phase === "result" && type && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { flex: 1, overflow: "auto", padding: "20px 20px 28px" }, children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { textAlign: "center", padding: "24px 0", marginBottom: 20, background: C.primaryLight, borderRadius: 20 }, children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 12, color: C.textSec, marginBottom: 8 }, children: "\uB098\uC758 \uBE75 \uC720\uD615\uC740" }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 64, marginBottom: 8 }, children: type.emoji }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 22, fontWeight: 900, color: C.text, marginBottom: 4 }, children: type.name }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 13, fontWeight: 700, color: C.primary, letterSpacing: 3, marginBottom: 6 }, children: resultCode }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { fontSize: 14, fontWeight: 600, color: C.textSec }, children: [
+            '"',
+            type.nickname,
+            '"'
           ] })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
-          "button",
-          {
-            onClick: finish,
-            style: { width: "100%", padding: "16px 0", borderRadius: 14, border: "none", background: C.primary, color: "#fff", fontSize: 15, fontWeight: 800, cursor: "pointer", marginTop: 20 },
-            children: "\uCDE8\uD5A5 \uC800\uACA9 \uBE75\uC9D1 \uBCF4\uB7EC\uAC00\uAE30 \u2192"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { marginTop: 10, fontSize: 11, color: C.success, fontWeight: 700 }, children: "\uD65C\uB3D9\uC9C0\uC218 +15\uC810 \uC801\uB9BD \uC608\uC815 \u2728" })
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { style: { fontSize: 14, color: C.text, lineHeight: 1.7, textAlign: "center", marginBottom: 24, wordBreak: "keep-all", padding: "0 4px" }, children: type.desc }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { background: "#fff", border: `1px solid ${C.border}`, borderRadius: 14, padding: 18, marginBottom: 12 }, children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 13, fontWeight: 700, color: C.text, marginBottom: 12, display: "flex", alignItems: "center", gap: 6 }, children: "\u{1F4A1} \uC774\uB7F0 \uBE75\uC744 \uC88B\uC544\uD574\uC694" }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { display: "flex", flexWrap: "wrap", gap: 8 }, children: type.breads.map((b) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { background: C.primaryLight, borderRadius: 8, padding: "6px 12px", fontSize: 13, color: C.primary, fontWeight: 600 }, children: b }, b)) })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { background: "#fff", border: `1px solid ${C.border}`, borderRadius: 14, padding: 18, marginBottom: 20 }, children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 13, fontWeight: 700, color: C.text, marginBottom: 12, display: "flex", alignItems: "center", gap: 6 }, children: "\u{1F3EA} \uCD94\uCC9C \uBE75\uC9D1" }),
+          resultBakeries.map((b, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { padding: "12px 0", borderBottom: i < resultBakeries.length - 1 ? `1px solid ${C.border}` : "none" }, children: [
+            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { fontSize: 14, fontWeight: 700, color: C.text, marginBottom: 4, display: "flex", alignItems: "center", gap: 6 }, children: [
+              b.name,
+              b.type === "online" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { background: C.primary, color: "#fff", fontSize: 10, padding: "2px 6px", borderRadius: 6, fontWeight: 600 }, children: "\uC628\uB77C\uC778" }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: 12, color: C.textSec }, children: b.region })
+            ] }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { display: "flex", flexWrap: "wrap", gap: 4, margin: "5px 0" }, children: b.tags.slice(0, 4).map((t) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { style: { fontSize: 11, color: C.primary, fontWeight: 600 }, children: [
+              "#",
+              t
+            ] }, t)) }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { fontSize: 12, color: C.textSec }, children: [
+              "\u2192 ",
+              b.menu.join(", ")
+            ] })
+          ] }, i))
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { display: "flex", gap: 10 }, children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: restart, style: { flex: 1, padding: 16, background: C.bgGray, color: C.text, border: "none", borderRadius: 14, fontSize: 15, fontWeight: 700, cursor: "pointer" }, children: "\uB2E4\uC2DC \uD558\uAE30" }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: finish, style: { flex: 1, padding: 16, background: C.primary, color: "#fff", border: "none", borderRadius: 14, fontSize: 15, fontWeight: 800, cursor: "pointer" }, children: "\uC644\uB8CC" })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { marginTop: 10, textAlign: "center", fontSize: 11, color: C.success, fontWeight: 700 }, children: "\uD65C\uB3D9\uC9C0\uC218 +15\uC810 \uC801\uB9BD \uC608\uC815 \u2728" })
       ] })
     ] });
   }
